@@ -14,7 +14,7 @@ function Header() {
             </div>
             <div className="header-container flex flex-column">
                 <h1 className="poppins-font txt-slogan">Innovation is always present at EnterTEK </h1>
-                <button className="button poppins-font " ><a className="text-decoration-none" href="#contact-us">Contact us</a></button> 
+                <button className="button poppins-font " ><a className="text-decoration-none" href="#contact">Contact us</a></button> 
             </div>
             <svg className="p-absolute z-index-10 " viewBox="0 0 1300 300">
                 <path className="anm" d="

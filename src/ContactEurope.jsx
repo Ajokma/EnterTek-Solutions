@@ -1,15 +1,12 @@
 import React from 'react'
+import phone from "./resouces/icons/phone.png"
 
 function ContactEurope() {
     return (
         <div className="address-container">
-            <div className="flex align-items-center margin-top-15">
-                <img className="icon-address"  src="/resouces/icons/gps.png" alt="" />
-                <p className="poppins-font address-text">20533 Biscayne Blvd, Miami, FL 33180, USA</p>
-            </div>
             <div className="flex align-items-center margin-top-15 ">
-                <img className="icon-address" src="/resouces/icons/phone.png" alt="" />
-                <p className="poppins-font address-text">+1 (305) 432 2970</p>
+                <img className="icon-address" src={phone} alt="" />
+                <p className="poppins-font address-text">Tomas Marty: +49 160 9574 7061 </p>
             </div>
             
         </div>

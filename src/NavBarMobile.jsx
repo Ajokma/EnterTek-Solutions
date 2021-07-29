@@ -16,8 +16,8 @@ function NavBarMobile({scrollNav}) {
             <div className="option-menu-container">
                 <ul className="flex flex-column navbar poppins-font">
                     <li onClick={showMenuOption}> <a className="navbar-options color-white text-decoration-none" href="#about-us">About us</a></li>
-                    <li onClick={showMenuOption} > <a className="navbar-options color-white text-decoration-none" href="#services-mobile">Services</a></li>
-                    <li onClick={showMenuOption} > <a className="navbar-options color-white text-decoration-none" href="#contact-us">Contact</a></li>
+                    <li onClick={showMenuOption} ><a className="navbar-options color-white text-decoration-none" href="#services-mobile">Services</a></li>
+                    <li onClick={showMenuOption} ><a className="navbar-options color-white text-decoration-none" href="#contact">Contact</a></li>
                 </ul>
             </div>
         )
