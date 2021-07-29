@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/EnterTek-Solutions/static/css/main.40080c18.chunk.css",
+    "main.js": "/EnterTek-Solutions/static/js/main.e4d0ed06.chunk.js",
+    "main.js.map": "/EnterTek-Solutions/static/js/main.e4d0ed06.chunk.js.map",
+    "runtime-main.js": "/EnterTek-Solutions/static/js/runtime-main.6fcc5aa9.js",
+    "runtime-main.js.map": "/EnterTek-Solutions/static/js/runtime-main.6fcc5aa9.js.map",
+    "static/js/2.d2f7a3b7.chunk.js": "/EnterTek-Solutions/static/js/2.d2f7a3b7.chunk.js",
+    "static/js/2.d2f7a3b7.chunk.js.map": "/EnterTek-Solutions/static/js/2.d2f7a3b7.chunk.js.map",
+    "static/js/3.6ba25ec9.chunk.js": "/EnterTek-Solutions/static/js/3.6ba25ec9.chunk.js",
+    "static/js/3.6ba25ec9.chunk.js.map": "/EnterTek-Solutions/static/js/3.6ba25ec9.chunk.js.map",
+    "index.html": "/EnterTek-Solutions/index.html",
+    "static/css/main.40080c18.chunk.css.map": "/EnterTek-Solutions/static/css/main.40080c18.chunk.css.map",
+    "static/js/2.d2f7a3b7.chunk.js.LICENSE.txt": "/EnterTek-Solutions/static/js/2.d2f7a3b7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6fcc5aa9.js",
+    "static/js/2.d2f7a3b7.chunk.js",
+    "static/css/main.40080c18.chunk.css",
+    "static/js/main.e4d0ed06.chunk.js"
+  ]
+}
