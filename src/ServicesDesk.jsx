@@ -8,7 +8,7 @@ function ServicesDesk() {
                 <div className="flex service-container ">
                     <div className=" flex margin-right-24px flex-column">
                         <div className="card-services-container flex flex-column">
-                            <img className="icon-card"  src="/resouces/icons/Product-Design.png" alt="product design" />
+                            <img className="icon-card"  src="/resouces/icons/product-design.png" alt="product design" />
                             <h1 className="poppins-font title-card">Product Design</h1>
                             <p className="poppins-font paragraph-card">EnterTEK recognizes the clients’ needs and originates solutions by making 
                                 unique designs. First, we acknowledge the client’s need by a decision-making process that allows us to define the 
@@ -47,7 +47,7 @@ function ServicesDesk() {
                             </p>
                         </div>
                         <div className="card-services-container flex flex-column">
-                            <img className="icon-card"  src="/resouces/icons/AI.png" alt="product design" />
+                            <img className="icon-card"  src="/resouces/icons/ai.png" alt="product design" />
                             <h1 className="poppins-font title-card">Artificial Intelligence</h1>
                             <p className="poppins-font paragraph-card">EnterTEK utilizes AI in a unique approach to further 
                                 develop solutions to our customers. We program and develop systems that think and act rationally 
@@ -81,7 +81,7 @@ function ServicesDesk() {
                             </p>
                         </div>
                         <div className="card-services-container flex flex-column">
-                            <img className="icon-card"  src="/resouces/icons/Infrastructure.png" alt="product design" />
+                            <img className="icon-card"  src="/resouces/icons/infrastructure.png" alt="product design" />
                             <h1 className="poppins-font title-card">Infrastructure</h1>
                             <p className="poppins-font paragraph-card">We operate different technologies and define the specific infrastructure that is useful for each client. 
                             </p>

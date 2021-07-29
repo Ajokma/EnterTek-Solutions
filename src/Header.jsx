@@ -5,9 +5,9 @@ function Header() {
         <div>
             <div id="intro"className="p-absolute header-container gradient-header  ">
                 <div className="black"></div> 
-                <img className="svg1-header" src="/resouces/rueda.png" alt="" />
-                <img className="svg4-header" src="/resouces/cruz.png" alt="" />
-                <img className="svg2-header" src="/resouces/rueda.png" alt="" />
+                <img className="svg1-header" src="/resouces/rueda.png" alt="rueda" />
+                <img className="svg4-header" src="/resouces/cruz.png" alt="cruz" />
+                <img className="svg2-header" src="/resouces/rueda.png" alt="rueda" />
                 <img className="svg3-header" src="/resouces/cruz.png" alt="" />
             </div>
             <div className="header-container flex flex-column">
@@ -23,7 +23,7 @@ function Header() {
                     L0 100
                     " fill="white"
                 />
-                <path className="anm-1  " fill-opacity="0.1" d="
+                <path className="anm-1  " opacity="0.1" d="
                     M0,192
                     C220,100,440,100,660,192
                     C880,290,1100,290,1320,192
@@ -31,14 +31,14 @@ function Header() {
                     L0 100
                     " fill="white"
                 />
-                <path className="anm-2" fill-opacity="0.1" d="
+                <path className="anm-2" opacity="0.1" d="
                     M0,192
                     C220,100,440,100,660,192
                     C880,290,1100,290,1320,192
                     L1320 100
                     L0 100
                     " fill="white"/>
-                <path className="anm-3" fill-opacity="0.1" d="
+                <path className="anm-3" opacity="0.1" d="
                     M0,192
                     C220,100,440,100,660,192
                     C880,290,1100,290,1320,192

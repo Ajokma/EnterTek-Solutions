@@ -36,7 +36,7 @@ function ServicesMolible() {
                 <h1 className="title-section color-oscuro poppins-font flex flex-column margin-bottom-55">Services</h1>
                 <div className="flex  services-totalcard-container">
                     <div className="card-services-container flex flex-column">
-                        <img className="icon-card"  src="/resouces/icons/Product-Design.png" alt="product design" />
+                        <img className="icon-card"  src="/resouces/icons/product-design.png" alt="product design" />
                         <h1 className="poppins-font title-card">Product Design</h1>
                         <p className="poppins-font paragraph-card"> {showM1?(<span>EnterTEK recognizes the clients’ needs and originates solutions 
                             by making unique designs. First, we acknowledge the client’s need by a decision-making process 
@@ -81,7 +81,7 @@ function ServicesMolible() {
                         </button>
                     </div>
                     <div className="card-services-container flex flex-column">
-                        <img className="icon-card"  src="/resouces/icons/AI.png" alt="artificial intelligence" />
+                        <img className="icon-card"  src="/resouces/icons/ai.png" alt="artificial intelligence" />
                         <h1 className="poppins-font title-card">Artificial Intelligence</h1>
                         <p className="poppins-font paragraph-card"> {showM4?(<span> EnterTEK utilizes AI in a unique approach to further develop solutions to our customers. We program and develop systems that think and act rationally like 
                             visual perceptions, voice recognition, language translations and problem-solving applications. This is done based on the analysis of real-time data and programmed algorithms. The decision-making process is achieved by 
@@ -120,7 +120,7 @@ function ServicesMolible() {
                         <p className="poppins-font paragraph-card"> We work with Amazon Web Services (AWS), Microsoft Azure, IBM Cloud, Oracle Cloud Infrastructure (OCI) and more.  </p>
                     </div>
                     <div className="card-services-container flex flex-column">
-                        <img className="icon-card"  src="/resouces/icons/Infrastructure.png" alt="Infrastructure" />
+                        <img className="icon-card"  src="/resouces/icons/infrastructure.png" alt="Infrastructure" />
                         <h1 className="poppins-font title-card">Infrastructure</h1>
                         <p className="poppins-font paragraph-card"> We operate different technologies and define the specific infrastructure that is useful 
                         for each client.  </p>
