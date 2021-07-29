@@ -1,7 +1,7 @@
 import React,{ useState, useEffect } from 'react';
 import AboutUs from './AboutUs';
 import './App.css';
-import ConctactUs from './ConctactUs';
+import ContactUs from './ContactUs';
 import Header from './Header';
 import NavBar from './NavBar';
 import ServicesDesk from './ServicesDesk';
@@ -38,7 +38,7 @@ function App(props) {
       <MediaQuery minWidth={1050}>
         <ServicesDesk/>
       </MediaQuery>
-      <ConctactUs/>
+      <ContactUs/>
     </div>
   );
 }

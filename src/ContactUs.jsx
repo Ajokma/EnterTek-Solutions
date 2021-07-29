@@ -1,9 +1,9 @@
 import React,{ useState } from 'react'
-import ContacEurope from './ContacEurope';
+import ContactEurope from './ContactEurope';
 import ContactNorthAmerica from './ContactNorthAmerica';
 import MediaQuery from 'react-responsive'
 
-function ConctactUs() {
+function ContactUs() {
     const [show, setShow] = useState(false);
     const [showE, setShowE] =useState(false)
     const showNorthA =()=>{
@@ -26,7 +26,7 @@ function ConctactUs() {
                                 </div>
                                 <div className="margin-bottom-15" >
                                     <button onClick={showEurope} className=" btn-countries color-white poppins-font  " >Europe</button>
-                                    {showE?(<ContacEurope/>):(<div></div>)}
+                                    {showE?(<ContactEurope/>):(<div></div>)}
                                 </div>
                                 <div>
                                     <button className="btn-countries color-white poppins-font ">South America</button>
@@ -88,7 +88,7 @@ function ConctactUs() {
     )
 }
 
-export default ConctactUs
+export default ContactUs
 
 
 

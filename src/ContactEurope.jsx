@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ContacEurope() {
+function ContactEurope() {
     return (
         <div className="address-container">
             <div className="flex align-items-center margin-top-15">
@@ -16,4 +16,4 @@ function ContacEurope() {
     )
 }
 
-export default ContacEurope
+export default ContactEurope

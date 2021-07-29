@@ -1,14 +1,16 @@
 import React from 'react'
+import cruz from "./resouces/cruz.png"
+import rueda from "./resouces/rueda.png"
 
 function Header() {
     return (
         <div>
             <div id="intro"className="p-absolute header-container gradient-header  ">
                 <div className="black"></div> 
-                <img className="svg1-header" src="/resouces/rueda.png" alt="rueda" />
-                <img className="svg4-header" src="/resouces/cruz.png" alt="cruz" />
-                <img className="svg2-header" src="/resouces/rueda.png" alt="rueda" />
-                <img className="svg3-header" src="/resouces/cruz.png" alt="" />
+                <img className="svg1-header" src={cruz} alt="rueda" />
+                <img className="svg4-header" src={rueda} alt="cruz" />
+                <img className="svg2-header" src={cruz} alt="rueda" />
+                <img className="svg3-header" src={rueda} alt="" />
             </div>
             <div className="header-container flex flex-column">
                 <h1 className="poppins-font txt-slogan">Innovation is always present at EnterTEK </h1>
