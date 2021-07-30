@@ -1,16 +1,17 @@
-import React from 'react'
-import cruz from "./resouces/cruz.png"
-import rueda from "./resouces/rueda.png"
+import React from 'react';
+import video from "./resouces/vide.mp4"
 
 function Header() {
     return (
         <div>
             <div id="intro"className="p-absolute header-container gradient-header  ">
-                <div className="black"></div> 
-                <img className="svg1-header" src={cruz} alt="rueda" />
-                <img className="svg4-header" src={rueda} alt="cruz" />
-                <img className="svg2-header" src={cruz} alt="rueda" />
-                <img className="svg3-header" src={rueda} alt="" />
+                <div className="black"></div>
+                <div className="video-contenedor">
+                <video autoplay loop muted className="video"  >
+                        <source src={video} type="video/mp4"  />
+                        tu video no es compatible
+                </video>
+                </div>
             </div>
             <div className="header-container flex flex-column">
                 <h1 className="poppins-font txt-slogan">Innovation is always present at EnterTEK </h1>
