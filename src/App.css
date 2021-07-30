@@ -184,61 +184,60 @@
 .margin-bottom-100{
   margin-bottom: 150px;
 }
-
-.anm{
-	-webkit-animation:pathAnim 40s linear infinite; 
-  animation:pathAnim 40s linear infinite; 
-  z-index: 1;
+.line-1{
+  z-index: 20;
+  opacity: 0.5;
+}
+.line-2{
+  z-index: 10;
+  opacity: 0.7;
+}
+.line-3{
+  z-index: 5;
+}
+.waves{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 200%;
+  height:20%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin:  center bottom;
 }
 
-.anm-1{
-  -webkit-animation:pathAnim 15s linear infinite; 
-  animation:pathAnim 15s linear infinite; 
+.wave1{
+  -webkit-background-size: 50% 80px;
+  background-size: 50% 80px;
+  animation:  animate 22s linear infinite;
 }
 
-.anm-2{
-  -webkit-animation:pathAnim 15s linear infinite; 
-  animation:pathAnim 15s linear infinite; 
+.wave2{
+  -webkit-background-size: 50% 80px;
+  background-size: 50% 100px;
+  animation:  animate 12s linear infinite;
 }
 
-.anm-3{
-  -webkit-animation:pathAnim 63s linear infinite; 
-  animation:pathAnim 63s linear infinite;
+.waves-container{
+  overflow: hidden;
 }
 
-@-webkit-keyframes pathAnim{
-	0%{
-		-webkit-d: -webkit-path("M0,192	C220,100,440,100,660,192 C880,290,1100,290,1320,192	L1320 500 L0 500");
-	}
-	25%{
-    -webkit-d: -webkit-path("M0,100	C220,100,440,292,660,292 C880,292,1100,100,1320,100	L1320 500 L0 500");
-	}
-	50%{
-    -webkit-d: -webkit-path("M0,192	C220,290,440,290,660,192 C880,100,1100,100,1320,192	L1320 500 L0 500");
-	}
-	75%{
-    -webkit-d: -webkit-path("M0,292	C220,292,440,100,660,100 C880,100,1100,292,1320,292	L1320 500 L0 500");
-	}
-	100%{
-    -webkit-d: -webkit-path("M0,192	C220,100,440,100,660,192 C880,290,1100,290,1320,192	L1320 500 L0 500");
-	}
+.wave3{
+  -webkit-background-size: 50% 80px;
+  background-size: 50% 80px;
+  animation:  animate 12s linear infinite;
 }
-@keyframes pathAnim{
-	0%{
-		d: path("M0,192	C220,100,440,100,660,192 C880,290,1100,290,1320,192	L1320 500 L0 500");
-	}
-	25%{
-		d: path("M0,100	C220,100,440,292,660,292 C880,292,1100,100,1320,100	L1320 500 L0 500");
-	}
-	50%{
-		d: path("M0,192	C220,290,440,290,660,192 C880,100,1100,100,1320,192	L1320 500 L0 500");
-	}
-	75%{
-		d: path("M0,292	C220,292,440,100,660,100 C880,100,1100,292,1320,292	L1320 500 L0 500");
-	}
-	100%{
-		d: path("M0,192	C220,100,440,100,660,192 C880,290,1100,290,1320,192	L1320 500 L0 500");
-	}
+
+@keyframes animate{
+  0%{
+    transform: translate(0) translate(0) scaleY(1);
+  }
+  50%{
+    transform: translate(-25) translate(0) scaleY(0.5);
+  }
+  100%{
+    transform: translate(-50%) translate(0) scaleY(1);
+  }
 }
 
 html{

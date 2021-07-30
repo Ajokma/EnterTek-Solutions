@@ -1,5 +1,8 @@
 import React from 'react';
 import video from "./resouces/vide.mp4"
+import w1 from "./resouces/w1.png"
+import w2 from "./resouces/w2.png"
+import w3 from "./resouces/w3.png"
 
 function Header() {
     return (
@@ -8,7 +11,7 @@ function Header() {
                 <div className="black"></div>
                 <div className="video-contenedor">
                 <video autoplay loop muted className="video"  >
-                        <source src="" type="video/mp4"  />
+                        <source autoplay src="" type="video/mp4"  />
                         tu video no es compatible
                 </video>
                 </div>
@@ -17,43 +20,18 @@ function Header() {
                 <h1 className="poppins-font txt-slogan">Innovation is always present at EnterTEK </h1>
                 <button className="button poppins-font " ><a className="text-decoration-none" href="#contact">Contact us</a></button> 
             </div>
-            <svg className="p-absolute z-index-10 " viewBox="0 0 1300 300">
-                <path className="anm" d="
-                    M0,192
-                    C220,100,440,100,560,192
-                    C780,290,1100,290,1320,192
-                    L1120 100
-                    L0 100
-                    " 
-                />
-                <path className="anm-1  " opacity="0.1" d="
-                    M0,192
-                    C220,100,440,100,660,192
-                    C880,290,1100,290,1320,192
-                    L1320 100
-                    L0 100
-                    " 
-                />
-                <path className="anm-2" opacity="0.1" d="
-                    M0,192
-                    C220,100,440,100,660,192
-                    C880,290,1100,290,1320,192
-                    L1320 100
-                    L0 100
-                    " /* fill="white" *//>
-                <path className="anm-3" opacity="0.1" d="
-                    M0,192
-                    C220,100,440,100,660,192
-                    C880,290,1100,290,1320,192
-                    L1320 100
-                    L0 100
-                    " 
-                />
-            </svg>
+            <div className="waves-container">
+                <div className="line-1">
+                    <img className="waves wave1" src={w1} alt="" />
+                </div>
+                <div className="line-2">
+                    <img className="waves wave2"  src={w2} alt="" />
+                </div>
+                <div className="line-3">
+                    <img className="waves wave3" src={w3} alt="" />
+                </div>
+            </div>
 
-
-
-         
         </div>
     )
 }
