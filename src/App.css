@@ -30,43 +30,11 @@
   background-size: 300% 300%;
 }
 
-.svg1-header{
-  position: absolute;
-  top: 25%;
-  left: 15%;
-  animation: rotate 17s infinite;
-}
-
-.svg2-header{
-  position: absolute;
-  top: 55%;
-  left: 85%;
-  animation: rotate 13s infinite;
-}
-
-.svg3-header{
-  position: absolute;
-  top: 20%;
-  left: 65%;
-  animation: rotate 15s infinite;
-}
-
-.svg4-header{
-  position: absolute;
-  top: 65%;
-  left: 25%;
-  animation: rotate 10s infinite;
-}
 
 @keyframes change {
   0%{background-position: 0 50%; }
   50%{background-position: 100% 50%; }
   100%{background-position: 0 50%; }
-}
-
-@keyframes rotate {
-  0%{transform: rotate(0deg);}
-  50%{transform: rotate(360deg);}
 }
 
 .navbar-container{
@@ -75,6 +43,7 @@
   padding-top: 1%;
   position: fixed;
 }
+
 .background-scroll{
   background-color:  rgba(34, 30, 63, 0.93);
   width: 100%;
@@ -94,6 +63,7 @@
   position: absolute;
   bottom: 0vh;
 }
+
 .z-index-10{
   z-index: -10;
 }
@@ -216,28 +186,20 @@
 }
 
 .anm{
-	animation:pathAnim 40s; 
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
+	animation:pathAnim 40s linear infinite; 
   z-index: 1;
 }
 
 .anm-1{
-  animation:pathAnim 15s; 
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
+  animation:pathAnim 15s linear infinite; 
 }
 
 .anm-2{
-  animation:pathAnim 49s; 
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
+  animation:pathAnim 49s linear infinite; 
 }
 
 .anm-3{
-  animation:pathAnim 63s; 
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
+  animation:pathAnim 63s linear infinite; 
 }
 
 @keyframes pathAnim{

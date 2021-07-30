@@ -8,7 +8,7 @@ function Header() {
                 <div className="black"></div>
                 <div className="video-contenedor">
                 <video autoplay loop muted className="video"  >
-                        <source src={video} type="video/mp4"  />
+                        <source src="" type="video/mp4"  />
                         tu video no es compatible
                 </video>
                 </div>
