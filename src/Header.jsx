@@ -20,13 +20,8 @@ function Header() {
                 <h1 className="poppins-font txt-slogan">Innovation is always present at EnterTEK </h1>
                 <button className="button poppins-font " ><a className="text-decoration-none" href="#contact">Contact us</a></button> 
             </div>
-            <div className="waves-container">
-                <div className="line-1">
-                    <img className="waves wave1" src={w1} alt="" />
-                </div>
-                <div className="line-2">
-                    <img className="waves wave2"  src={w2} alt="" />
-                </div>
+            <div >
+            
                 <div className="line-3">
                     <img className="waves wave3" src={w3} alt="" />
                 </div>
