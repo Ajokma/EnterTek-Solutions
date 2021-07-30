@@ -186,20 +186,24 @@
 }
 
 .anm{
-	animation:pathAnim 40s linear infinite; 
+	-webkit-animation:pathAnim 40s linear infinite; 
+  animation:pathAnim 40s linear infinite; 
   z-index: 1;
 }
 
 .anm-1{
+  -webkit-animation:pathAnim 15s linear infinite; 
   animation:pathAnim 15s linear infinite; 
 }
 
 .anm-2{
-  animation:pathAnim 49s linear infinite; 
+  -webkit-animation:pathAnim 15s linear infinite; 
+  animation:pathAnim 15s linear infinite; 
 }
 
 .anm-3{
-  animation:pathAnim 63s linear infinite; 
+  -webkit-animation:pathAnim 63s linear infinite; 
+  animation:pathAnim 63s linear infinite;
 }
 
 @keyframes pathAnim{
