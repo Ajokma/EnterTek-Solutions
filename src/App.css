@@ -22,14 +22,39 @@
   overflow: hidden;
 }
 
+
 .gradient-header{
   margin-bottom: 3px;
   z-index: -24;
   background-image: linear-gradient(to left, #6960C5, #B771CF );
   animation: change 5s ease-in-out infinite;
   background-size: 300% 300%;
+
+}
+.wave{
+  position: absolute;
+  bottom: -2%;
+  height: 15%;
+}
+.wave2{
+  position: absolute;
+  bottom: -1%;
+  opacity: 0.08;
+  height: 35%;
+  width: 150%;
+  animation: wave 55s linear infinite;
+}
+.wave3{
+  position: absolute;
+  bottom: -1%;
+  opacity: 0.03;
+  height: 35%;
 }
 
+@keyframes wave {
+  0%{transform: translate(0,0) }
+  50%{transform: translate(0,150px) }
+}
 
 @keyframes change {
   0%{background-position: 0 50%; }
@@ -185,70 +210,57 @@
   margin-bottom: 150px;
 }
 .line-3{
-  z-index: 5;
-  opacity: 0.5;
-}
-
-.waves{
-  position: absolute;
+  position:relative;
   left: 0;
-  bottom: 0;
-  width: 200%;
-  height:20%;
-  background-repeat: repeat no-repeat;
-  background-position: 0 bottom;
-  transform-origin:  center bottom;
+  top: -283px;
+  z-index: 5;
 }
 
-.wave1{
-  -webkit-background-size: 50% 80px;
+.line-2{
+  position:relative;
+  left: 0;
+  top: -650px;
+  z-index: -1;
+  opacity: 0.20;
+}
+.wave-animation-2{
+  width: 470%;
   background-size: 50% 80px;
-  animation:  animate 22s linear infinite;
+  animation:  animate 130s cubic-bezier(.37,.77,.83,.37) infinite;
 }
 
-.wave2{
-  -webkit-background-size: 50% 80px;
-  background-size: 50% 100px;
-  animation:  animate 12s linear infinite;
-}
-
-.waves-container{
-  overflow: hidden;
-}
-
-.wave3{
-  -webkit-background-size: 50% 80px;
+.wave-animation{
+  width: 470%;
   background-size: 50% 80px;
-  animation:  animate 12s linear infinite;
+  animation:  animate 90s cubic-bezier(.37,.67,.83,.67) infinite;
 }
 
 @keyframes animate{
   0%{
-    transform: translate(0) translate(0) scaleY(1);
+    transform: translate(-2%) translate(0) ;
   }
+  
   50%{
-    transform: translate(-25) translate(0) scaleY(0.5);
-  }
-  100%{
-    transform: translate(-50%) translate(0) scaleY(1);
+    transform: translate(-70%) translate(0) ;
   }
 }
+
 
 html{
   scroll-behavior: smooth;
 }
 
 #about-us{
-  padding: 250px 0px 0px;
+  padding: 230px 0px 0px;
   position: relative;
-  top: -300px;
+  top: -250px;
 }
 
 #services-desktop{
   padding: 150px 0px 0px;
   position: relative;
-  top:-423px;
-  height: 1550px;
+  top:-403px;
+  height: 1500px;
 }
 
 .about-us-container{

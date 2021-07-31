@@ -1,5 +1,5 @@
 {
-  "homepage":"http://Ajokma.github.io/EnterTek-Solutions",
+  "homepage": "http://Ajokma.github.io/EnterTek-Solutions",
   "name": "landing",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +11,7 @@
     "react-dom": "^17.0.2",
     "react-responsive": "^9.0.0-beta.2",
     "react-scripts": "4.0.3",
+    "react-wavify": "^1.5.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -18,8 +19,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
