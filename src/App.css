@@ -435,6 +435,11 @@ html{
     height: 100vh ;
   }
 
+  .video-mobile{
+  position: relative;
+  left: -70%;
+  }
+
   .background-1{
     background-color: black;
     width: 100%;
@@ -449,6 +454,12 @@ html{
   .video{
     width: 100%;
     height: 100%;
+  }
+
+  .wave{
+    position: absolute;
+    bottom: 9%;
+    height: 23%;
   }
 
 
@@ -485,8 +496,8 @@ html{
   
 
   #services-mobile{
-    height: 3950px;
-    padding: 90px 0px 0px;
+    height: 3990px;
+    padding: 80px 0px 0px;
     position: relative;
     top: -319px;
   }
@@ -794,6 +805,10 @@ html{
     z-index: 1;
     padding-top: 3px;
   }
+  .video-mobile{
+    position: relative;
+    left: -70%;
+    }
   
   .navbar-container{
     justify-content: space-between;

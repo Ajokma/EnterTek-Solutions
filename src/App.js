@@ -26,7 +26,7 @@ function App(props) {
     <div className="app">
       <MediaQuery maxWidth={1050}>
         <NavBarMobile scrollNav={scrollNav}/>
-      </MediaQuery>
+      </MediaQuery >
       <MediaQuery minWidth={1052}>
         <NavBar scrollNav={scrollNav}/>
       </MediaQuery>
