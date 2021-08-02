@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/EnterTek-Solutions/static/css/main.4df67709.chunk.css",
-    "main.js": "/EnterTek-Solutions/static/js/main.0f49c694.chunk.js",
-    "main.js.map": "/EnterTek-Solutions/static/js/main.0f49c694.chunk.js.map",
+    "main.css": "/EnterTek-Solutions/static/css/main.aaf85a88.chunk.css",
+    "main.js": "/EnterTek-Solutions/static/js/main.807d34a2.chunk.js",
+    "main.js.map": "/EnterTek-Solutions/static/js/main.807d34a2.chunk.js.map",
     "runtime-main.js": "/EnterTek-Solutions/static/js/runtime-main.a2637cca.js",
     "runtime-main.js.map": "/EnterTek-Solutions/static/js/runtime-main.a2637cca.js.map",
-    "static/js/2.ff77308f.chunk.js": "/EnterTek-Solutions/static/js/2.ff77308f.chunk.js",
-    "static/js/2.ff77308f.chunk.js.map": "/EnterTek-Solutions/static/js/2.ff77308f.chunk.js.map",
+    "static/js/2.26af8a08.chunk.js": "/EnterTek-Solutions/static/js/2.26af8a08.chunk.js",
+    "static/js/2.26af8a08.chunk.js.map": "/EnterTek-Solutions/static/js/2.26af8a08.chunk.js.map",
     "static/js/3.e217fc31.chunk.js": "/EnterTek-Solutions/static/js/3.e217fc31.chunk.js",
     "static/js/3.e217fc31.chunk.js.map": "/EnterTek-Solutions/static/js/3.e217fc31.chunk.js.map",
     "index.html": "/EnterTek-Solutions/index.html",
-    "static/css/main.4df67709.chunk.css.map": "/EnterTek-Solutions/static/css/main.4df67709.chunk.css.map",
-    "static/js/2.ff77308f.chunk.js.LICENSE.txt": "/EnterTek-Solutions/static/js/2.ff77308f.chunk.js.LICENSE.txt",
+    "static/css/main.aaf85a88.chunk.css.map": "/EnterTek-Solutions/static/css/main.aaf85a88.chunk.css.map",
+    "static/js/2.26af8a08.chunk.js.LICENSE.txt": "/EnterTek-Solutions/static/js/2.26af8a08.chunk.js.LICENSE.txt",
     "static/media/ai.ef02b91a.png": "/EnterTek-Solutions/static/media/ai.ef02b91a.png",
     "static/media/cryptocurrency.26d9256f.png": "/EnterTek-Solutions/static/media/cryptocurrency.26d9256f.png",
     "static/media/enterte.46f2680c.png": "/EnterTek-Solutions/static/media/enterte.46f2680c.png",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.a2637cca.js",
-    "static/js/2.ff77308f.chunk.js",
-    "static/css/main.4df67709.chunk.css",
-    "static/js/main.0f49c694.chunk.js"
+    "static/js/2.26af8a08.chunk.js",
+    "static/css/main.aaf85a88.chunk.css",
+    "static/js/main.807d34a2.chunk.js"
   ]
 }
