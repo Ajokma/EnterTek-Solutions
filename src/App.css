@@ -17,21 +17,46 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  mix-blend-mode:overlay;
+  opacity: 0.6;
+  
 }
 
 .gradient-header{
   margin-bottom: 3px;
-  z-index: -24;
-  background-image: linear-gradient(to left, #6960C5, #B771CF );
-  animation: change 5s ease-in-out infinite;
-  background-size: 300% 300%;
-
+  z-index: -4;
+  background-image: linear-gradient(to left, #8B89D0, #DD9FD4);
+  animation: change 7s ease-in-out infinite;
+  position: absolute;
+  background-size: 250% 250%;
 }
+
+@keyframes change{
+  0%{
+    background-position: 0 50% ;
+  }
+  
+  50%{
+    background-position: 100% 50% ;
+  }
+
+  100%{
+    background-position: 0% 50% ;
+  }
+}
+
 .wave{
   position: absolute;
   bottom: -2%;
   height: 23%;
 }
+.wave-2{
+  position: absolute;
+  bottom: 2%;
+  height: 23%;
+  opacity: 0.2;
+}
+
 
 .navbar-container{
   width: 100vw;
@@ -88,6 +113,7 @@
   font-weight: 600;
   z-index: 5;
 }
+
 .text-decoration-none{
   text-decoration: none;
   color: white;
@@ -108,10 +134,14 @@
   line-height: 85px;
   color: white;
   font-weight: 600;
-  width: 876px;
-  height: 144px;
+  width: 916px;
+  height: 134px;
   text-align: center;
-  margin-bottom: 40px;
+  text-shadow: 1.5px 1.5px 3px rgb(91, 5, 99,0.1);
+}
+
+.span-slogan{
+  font-weight: 800;
 }
 
 .navbar{
@@ -186,25 +216,6 @@ a:hover{
 .margin-bottom-100{
   margin-bottom: 150px;
 }
-.line-3{
-  position:relative;
-  left: 0;
-  top: -283px;
-  z-index: 5;
-}
-
-.line-2{
-  position:relative;
-  left: 0;
-  top: -650px;
-  z-index: -1;
-  opacity: 0.20;
-}
-.wave-animation-2{
-  width: 470%;
-  background-size: 50% 80px;
-  animation:  animate 130s cubic-bezier(.37,.77,.83,.37) infinite;
-}
 
 .wave-animation{
   width: 470%;
@@ -230,8 +241,7 @@ html{
 #about-us{
   padding: 230px 0px 0px;
   position: relative;
-  top: -250px;
-}
+  top: -250px;}
 
 #services-desktop{
   padding: 150px 0px 0px;
@@ -242,9 +252,10 @@ html{
 
 .about-us-container{
   width: 100vw;
-  height: 100%;
-  margin-top: 110px;
-  margin-bottom: 150px;
+  height: 120%;
+  padding: 100px 0 150px ;
+  background-color:#221E3F;
+  
 }
 
 .about-us-paragraph{
@@ -252,17 +263,12 @@ html{
   height: 466px;
   font-size: 16px;
   line-height: 35px;
-  color: #434343;
 }
 
 .title-section {
   font-size: 50px;
   line-height: 42px;
   font-weight: 600;
-}
-
-.color-oscuro{
-  color: #221E3F;
 }
 
 .color-white{
@@ -275,10 +281,12 @@ html{
   border-radius: 26px;
   padding: 23px;
   margin-top: 25px;
+ 
 }
 .services-desktop-container{
   width: 100vw;
-  height: 100%;
+  background-color:#221E3F;
+  padding: 100px 0 0;
 }
 
 .title-card{
@@ -337,12 +345,6 @@ html{
 }
 .background-contact-us{
   background: #221E3F;
-}
-.clipPath-wave{
-  background: #221E3F;
-  height: 330px;
-  width: 130vw;
-  clip-path: polygon(50% 100%, 0% 100% , 0% 65%, 1% 64.95%, 2% 64.8%, 3% 64.6%, 4% 64.3%, 5% 63.9%, 6% 63.45%, 7% 62.9%, 8% 62.25%, 9% 61.55%, 10% 60.8%, 11% 59.95%, 12% 59.05%, 13% 58.1%, 14% 57.1%, 15% 56.05%, 16% 55%, 17% 53.9%, 18% 52.8%, 19% 51.65%, 20% 50.5%, 21% 49.35%, 22% 48.2%, 23% 47.05%, 24% 45.9%, 25% 44.8%, 26% 43.75%, 27% 42.75%, 28% 41.75%, 29% 40.8%, 30% 39.9%, 31% 39.1%, 32% 38.35%, 33% 37.65%, 34% 37.05%, 35% 36.5%, 36% 36.05%, 37% 35.65%, 38% 35.35%, 39% 35.15%, 40% 35.05%, 41% 35%, 42% 35.05%, 43% 35.2%, 44% 35.45%, 45% 35.75%, 46% 36.15%, 47% 36.65%, 48% 37.2%, 49% 37.85%, 50% 38.55%, 51% 39.35%, 52% 40.2%, 53% 41.1%, 54% 42.05%, 55% 43.05%, 56% 44.1%, 57% 45.15%, 58% 46.3%, 59% 47.4%, 60% 48.55%, 61% 49.7%, 62% 50.85%, 63% 52%, 64% 53.15%, 65% 54.25%, 66% 55.35%, 67% 56.4%, 68% 57.45%, 69% 58.4%, 70% 59.35%, 71% 60.2%, 72% 61.05%, 73% 61.8%, 74% 62.45%, 75% 63.05%, 76% 63.6%, 77% 64.05%, 78% 64.4%, 79% 64.7%, 80% 64.85%, 81% 65%, 82% 65%, 83% 64.9%, 84% 64.75%, 85% 64.5%, 86% 64.2%, 87% 63.75%, 88% 63.25%, 89% 62.7%, 90% 62.05%, 91% 61.3%, 92% 60.5%, 93% 59.65%, 94% 58.75%, 95% 57.8%, 96% 56.8%, 97% 55.75%, 98% 54.65%, 99% 53.55%, 100% 100%);
 }
 
 .input-container{
@@ -437,7 +439,7 @@ html{
 
   .video-mobile{
   position: relative;
-  left: -70%;
+  left:0%;
   }
 
   .background-1{
@@ -579,10 +581,11 @@ html{
 
   .black{
     width: 100vw;
-    height:100vh ;
-    background-image: linear-gradient(to top , rgb(0, 0, 0,.8), rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.0)) ;
+    height: 100vh;
+    background-image: linear-gradient(to top , rgba(31, 2, 31, 0.8), rgba(21, 2, 36, 0.3),rgba(0, 0, 0, 0.1), rgba(21, 2, 36, 0.1), rgba(21, 2, 36, 0.1), rgba(21, 2, 36, 0.2), rgba(21, 2, 36, 0.3),rgba(0, 0, 0, 0.4)) ;
     position:absolute;
-    z-index: -1;
+    bottom: 0;
+    z-index: 3;
   }
 
 

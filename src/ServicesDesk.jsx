@@ -14,7 +14,7 @@ function ServicesDesk() {
     return (
         <section id="services-desktop">
             <div className="services-desktop-container">
-                <h1 className="title-section color-oscuro poppins-font flex flex-column margin-bottom-55">Services</h1>
+                <h1 className=" color-white title-section poppins-font flex flex-column margin-bottom-55">Services</h1>
                 <div className="flex service-container ">
                     <div className=" flex margin-right-24px flex-column">
                         <div className="card-services-container flex flex-column">
