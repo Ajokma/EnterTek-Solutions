@@ -44,8 +44,8 @@ function ServicesMolible() {
     };
     return (
         <section id="services-mobile">
-            <div className=" flex flex-column ">
-                <h1 className="title-section color-oscuro poppins-font flex flex-column margin-bottom-55">Services</h1>
+            <div className=" services-mobile-container flex flex-column ">
+                <h1 className="color-white title-section color-oscuro poppins-font flex flex-column margin-bottom-55">Services</h1>
                 <div className="flex  services-totalcard-container">
                     <div className="card-services-container flex flex-column">
                         <img className="icon-card"  src={productDesign} alt="product design" />

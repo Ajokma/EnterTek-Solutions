@@ -3,7 +3,8 @@ import Wave from "react-wavify";
 import ReactPlayer from 'react-player';
 import MediaQuery from 'react-responsive'
 import video from "./resouces/vide-122.mp4";
-import videoMobile from "./resouces/vide-121.mp4"
+import videoMobile from "./resouces/vide-122-mobile.mp4"
+import videoIpad from "./resouces/vide-122-ipad.mp4"
 
 function Header() {
     return (
@@ -15,14 +16,27 @@ function Header() {
                     <ReactPlayer  className="video-mobile"
                         url={videoMobile}
                         width="100%"
-                        height="100%"
+                        height="100"
                         playing
                         muted
                         loop
                     />
                     </div>
                 </MediaQuery>
-               <MediaQuery minWidth={652}>
+                <MediaQuery minWidth={700}>
+                    <div className="video-contenedor">
+                        <ReactPlayer
+                                url={videoIpad}
+                                width="100%"
+                                height="100"
+                                playing
+                                muted
+                                loop
+                                rewind
+                            />
+                    </div>
+                </MediaQuery> 
+               <MediaQuery minWidth={1050}>
                     <div className="video-contenedor">
                         <ReactPlayer
                                 url={video}
@@ -31,7 +45,7 @@ function Header() {
                                 playing
                                 muted
                                 loop
-                                reversd
+                                rewind
                             />
                     </div>
                 </MediaQuery> 
@@ -44,7 +58,7 @@ function Header() {
            <MediaQuery maxWidth={1050}>
                 <Wave 
                     className="wave"
-                    fill="#6239F5"
+                    fill="#221E3F"
                     paused={false}
                     options={{
                         height:59,
@@ -71,9 +85,9 @@ function Header() {
                         fill="#221E3F"
                         paused={false}
                         options={{
-                            height:49,
+                            height:39,
                             amplitude: 80,
-                            speed: 0.18,
+                            speed: 0.29,
                             points:2
                         }}
                     />

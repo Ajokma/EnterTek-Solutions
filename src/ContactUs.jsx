@@ -1,4 +1,5 @@
 import React,{ useState } from 'react'
+import Wave from "react-wavify";
 import ContactEurope from './ContactEurope';
 import ContactNorthAmerica from './ContactNorthAmerica';
 import MediaQuery from 'react-responsive';
@@ -62,7 +63,31 @@ function ContactUs () {
     };
     return (
         <section id="contact">
-            <div  className="clipPath-wave background-contact-us{" ></div>
+            <MediaQuery maxWidth={1050}>
+                <Wave 
+                    className="wave-contact"
+                    fill="#6239F5"
+                    paused={false}
+                    options={{
+                        height:90,
+                        amplitude: 40,
+                        speed: 0.18,
+                        points:2
+                    }}
+                />
+           </MediaQuery>
+                <MediaQuery minWidth={1052}>
+                    <Wave className="wave-contact"
+                        fill="#6239F5"
+                        paused={false}
+                        options={{
+                            height:29,
+                            amplitude: 80,
+                            speed: 0.29,
+                            points:2
+                        }}
+                    />
+            </MediaQuery>
             <div className="contact-us-container flex justify-content-center align-items-center background-contact-us">
                 <div className="flex justify-content-center ">
                     <MediaQuery maxWidth={1050}>{ CountriesMobile() }</MediaQuery>
@@ -89,7 +114,7 @@ function ContactUs () {
                 </div>
             </div>
             <div className= "social-media-container flex justify-content-btw align-items-center poppins-font">
-                    <p> Entertek solutions INC.</p>
+                    <p> Entertek solutions.</p>
                     <div >
                         <img className="margin-right-24px" width="25px" src={fb} alt="facebook" />
                         <img className="margin-right-24px" width="25px"  src={tw}alt="twitter" />
