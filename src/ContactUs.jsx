@@ -88,7 +88,7 @@ function ContactUs () {
                         }}
                     />
             </MediaQuery>
-            <div className="contact-us-container flex justify-content-center align-items-center background-contact-us">
+            <div className="contact-us-container flex justify-content-center align-items-center ">
                 <div className="flex justify-content-center ">
                     <MediaQuery maxWidth={1050}>{ CountriesMobile() }</MediaQuery>
                     <MediaQuery minWidth={1050}>{ CountriesDesktop() }</MediaQuery>

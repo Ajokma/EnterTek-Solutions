@@ -340,13 +340,12 @@ html{
 
 .contact-us-container{
   width: 100vw;
-  height: 735px;
+  height: 755px;
   padding:44px 0 100px;
-}
-
-.background-contact-us{
   background: #6239F5;
 }
+
+
 
 .input-container{
   width: 614px;
