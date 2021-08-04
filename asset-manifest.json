@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/EnterTek-Solutions/static/css/main.e8e62937.chunk.css",
+    "main.css": "/EnterTek-Solutions/static/css/main.6094e5ff.chunk.css",
     "main.js": "/EnterTek-Solutions/static/js/main.a4c551d5.chunk.js",
     "main.js.map": "/EnterTek-Solutions/static/js/main.a4c551d5.chunk.js.map",
     "runtime-main.js": "/EnterTek-Solutions/static/js/runtime-main.7fcf6303.js",
@@ -10,7 +10,7 @@
     "static/js/3.9e4b8bf4.chunk.js": "/EnterTek-Solutions/static/js/3.9e4b8bf4.chunk.js",
     "static/js/3.9e4b8bf4.chunk.js.map": "/EnterTek-Solutions/static/js/3.9e4b8bf4.chunk.js.map",
     "index.html": "/EnterTek-Solutions/index.html",
-    "static/css/main.e8e62937.chunk.css.map": "/EnterTek-Solutions/static/css/main.e8e62937.chunk.css.map",
+    "static/css/main.6094e5ff.chunk.css.map": "/EnterTek-Solutions/static/css/main.6094e5ff.chunk.css.map",
     "static/js/2.7291c95f.chunk.js.LICENSE.txt": "/EnterTek-Solutions/static/js/2.7291c95f.chunk.js.LICENSE.txt",
     "static/media/ai.ef02b91a.png": "/EnterTek-Solutions/static/media/ai.ef02b91a.png",
     "static/media/cryptocurrency.26d9256f.png": "/EnterTek-Solutions/static/media/cryptocurrency.26d9256f.png",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.7fcf6303.js",
     "static/js/2.7291c95f.chunk.js",
-    "static/css/main.e8e62937.chunk.css",
+    "static/css/main.6094e5ff.chunk.css",
     "static/js/main.a4c551d5.chunk.js"
   ]
 }
