@@ -445,14 +445,16 @@ input::placeholder {
   }
 
   .video-mobile{
-  position: relative;
-  left:0%;
+  position: absolute;
+  left:-40px;
   }
 
   .video-contenedor{
     width: 100vw;
     height:100vh;
     overflow: hidden;
+    position: relative;
+    left:0;
   }
 
   .video{
@@ -462,7 +464,7 @@ input::placeholder {
 
   .wave{
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     height: 29%;
   }
 
@@ -572,9 +574,9 @@ input::placeholder {
     height: 100%;
     font-size: 15px;
     line-height: 25px;
-    color: #434343;
     padding-left: 13px;
     padding-right: 13px;
+    text-align: center;
   }
 
   .about-us-container.justify-content-evenly{

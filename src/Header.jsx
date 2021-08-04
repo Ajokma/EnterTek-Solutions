@@ -20,12 +20,12 @@ function Header() {
                     <div className="video-contenedor">
                     <ReactPlayer  className="video-mobile"
                         url={videoMobile}
-                        width="100%"
-                        height="100"
+                        width="120%"
+                        height="120%"
                         playing
                         muted
                         loop
-                        onReady={videoImgMobile}
+                        onBuffer={videoImgMobile}
                     />
                     </div>
                 </MediaQuery>
@@ -52,7 +52,7 @@ function Header() {
                                 muted
                                 loop
                                 rewind
-                                onReady={videoImg}
+                                onBuffer={videoImg}
                             />
                     </div>
                 </MediaQuery> 
