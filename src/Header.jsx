@@ -4,7 +4,12 @@ import ReactPlayer from 'react-player';
 import MediaQuery from 'react-responsive'
 import video from "./resouces/vide-122.mp4";
 import videoMobile from "./resouces/vide-122-mobile.mp4"
-import videoIpad from "./resouces/vide-122-ipad.mp4"
+import videoIpad from "./resouces/vide-122-ipad.mp4";
+import videoImg from "./resouces/video-img.png";
+import videoImgMobile from "./resouces/video-img-mobile.png"
+import Typewriter from 'typewriter-effect';
+
+
 
 function Header() {
     return (
@@ -20,6 +25,7 @@ function Header() {
                         playing
                         muted
                         loop
+                        onReady={videoImgMobile}
                     />
                     </div>
                 </MediaQuery>
@@ -46,12 +52,26 @@ function Header() {
                                 muted
                                 loop
                                 rewind
+                                onReady={videoImg}
                             />
                     </div>
                 </MediaQuery> 
             </div>
             <div className="header-container flex flex-column">
-                <h1 className="poppins-font txt-slogan">EnterTEK is <span className="span-slogan">innovation</span></h1>
+                <div className="flex">
+                <p className="poppins-font txt-slogan">  We are 
+                    <span className="span-slogan">
+                        <Typewriter
+                        options={{
+                            strings: ['creative', ' innovative','EnterTEK Solutions'],
+                            autoStart: true,
+                            loop: true,
+                            pauseFor:2000
+                        }}
+                        />
+                    </span>
+                </p>
+                </div>
                 <button className="button poppins-font " ><a className="text-decoration-none" href="#contact">Contact us</a></button> 
             </div>
            <div>
@@ -65,6 +85,7 @@ function Header() {
                         amplitude: 40,
                         speed: 0.18,
                         points:2
+            
                     }}
                 />
            </MediaQuery>
