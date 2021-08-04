@@ -23,7 +23,7 @@ function Header() {
                     />
                     </div>
                 </MediaQuery>
-                <MediaQuery minWidth={700}>
+                <MediaQuery maxWidth={1050}>
                     <div className="video-contenedor">
                         <ReactPlayer
                                 url={videoIpad}
@@ -36,7 +36,7 @@ function Header() {
                             />
                     </div>
                 </MediaQuery> 
-               <MediaQuery minWidth={1050}>
+               <MediaQuery minWidth={1051}>
                     <div className="video-contenedor">
                         <ReactPlayer
                                 url={video}
