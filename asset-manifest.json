@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/EnterTek-Solutions/static/css/main.8c6d4ce4.chunk.css",
-    "main.js": "/EnterTek-Solutions/static/js/main.21852d51.chunk.js",
-    "main.js.map": "/EnterTek-Solutions/static/js/main.21852d51.chunk.js.map",
+    "main.js": "/EnterTek-Solutions/static/js/main.10d0ed97.chunk.js",
+    "main.js.map": "/EnterTek-Solutions/static/js/main.10d0ed97.chunk.js.map",
     "runtime-main.js": "/EnterTek-Solutions/static/js/runtime-main.7fcf6303.js",
     "runtime-main.js.map": "/EnterTek-Solutions/static/js/runtime-main.7fcf6303.js.map",
     "static/js/2.7291c95f.chunk.js": "/EnterTek-Solutions/static/js/2.7291c95f.chunk.js",
@@ -28,6 +28,6 @@
     "static/js/runtime-main.7fcf6303.js",
     "static/js/2.7291c95f.chunk.js",
     "static/css/main.8c6d4ce4.chunk.css",
-    "static/js/main.21852d51.chunk.js"
+    "static/js/main.10d0ed97.chunk.js"
   ]
 }
