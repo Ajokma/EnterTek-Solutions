@@ -464,11 +464,9 @@ input::placeholder {
 
   .wave{
     position: absolute;
-    bottom: 0px;
-    height: 29%;
+    bottom: -75px;
+    height: 42%;
   }
-
-
   .btn-menu{
     background: none;
     border: none;
