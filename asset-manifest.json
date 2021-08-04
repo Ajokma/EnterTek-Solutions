@@ -1,31 +1,33 @@
 {
   "files": {
-    "main.css": "/EnterTek-Solutions/static/css/main.f981c168.chunk.css",
-    "main.js": "/EnterTek-Solutions/static/js/main.1f3187f6.chunk.js",
-    "main.js.map": "/EnterTek-Solutions/static/js/main.1f3187f6.chunk.js.map",
-    "runtime-main.js": "/EnterTek-Solutions/static/js/runtime-main.a2637cca.js",
-    "runtime-main.js.map": "/EnterTek-Solutions/static/js/runtime-main.a2637cca.js.map",
-    "static/js/2.f285429e.chunk.js": "/EnterTek-Solutions/static/js/2.f285429e.chunk.js",
-    "static/js/2.f285429e.chunk.js.map": "/EnterTek-Solutions/static/js/2.f285429e.chunk.js.map",
-    "static/js/3.e217fc31.chunk.js": "/EnterTek-Solutions/static/js/3.e217fc31.chunk.js",
-    "static/js/3.e217fc31.chunk.js.map": "/EnterTek-Solutions/static/js/3.e217fc31.chunk.js.map",
+    "main.css": "/EnterTek-Solutions/static/css/main.803d3026.chunk.css",
+    "main.js": "/EnterTek-Solutions/static/js/main.ff524218.chunk.js",
+    "main.js.map": "/EnterTek-Solutions/static/js/main.ff524218.chunk.js.map",
+    "runtime-main.js": "/EnterTek-Solutions/static/js/runtime-main.7fcf6303.js",
+    "runtime-main.js.map": "/EnterTek-Solutions/static/js/runtime-main.7fcf6303.js.map",
+    "static/js/2.7291c95f.chunk.js": "/EnterTek-Solutions/static/js/2.7291c95f.chunk.js",
+    "static/js/2.7291c95f.chunk.js.map": "/EnterTek-Solutions/static/js/2.7291c95f.chunk.js.map",
+    "static/js/3.9e4b8bf4.chunk.js": "/EnterTek-Solutions/static/js/3.9e4b8bf4.chunk.js",
+    "static/js/3.9e4b8bf4.chunk.js.map": "/EnterTek-Solutions/static/js/3.9e4b8bf4.chunk.js.map",
     "index.html": "/EnterTek-Solutions/index.html",
-    "static/css/main.f981c168.chunk.css.map": "/EnterTek-Solutions/static/css/main.f981c168.chunk.css.map",
-    "static/js/2.f285429e.chunk.js.LICENSE.txt": "/EnterTek-Solutions/static/js/2.f285429e.chunk.js.LICENSE.txt",
+    "static/css/main.803d3026.chunk.css.map": "/EnterTek-Solutions/static/css/main.803d3026.chunk.css.map",
+    "static/js/2.7291c95f.chunk.js.LICENSE.txt": "/EnterTek-Solutions/static/js/2.7291c95f.chunk.js.LICENSE.txt",
     "static/media/ai.ef02b91a.png": "/EnterTek-Solutions/static/media/ai.ef02b91a.png",
     "static/media/cryptocurrency.26d9256f.png": "/EnterTek-Solutions/static/media/cryptocurrency.26d9256f.png",
     "static/media/enterte.46f2680c.png": "/EnterTek-Solutions/static/media/enterte.46f2680c.png",
     "static/media/facebook.23df9b93.png": "/EnterTek-Solutions/static/media/facebook.23df9b93.png",
     "static/media/linkedin.55182fed.png": "/EnterTek-Solutions/static/media/linkedin.55182fed.png",
     "static/media/twitter.51e39279.png": "/EnterTek-Solutions/static/media/twitter.51e39279.png",
-    "static/media/vide-122-ipad.96832f4d.mp4": "/EnterTek-Solutions/static/media/vide-122-ipad.96832f4d.mp4",
-    "static/media/vide-122-mobile.84d82710.mp4": "/EnterTek-Solutions/static/media/vide-122-mobile.84d82710.mp4",
-    "static/media/vide-122.9d0897d5.mp4": "/EnterTek-Solutions/static/media/vide-122.9d0897d5.mp4"
+    "static/media/vide-122-ipad.4bd58ba8.mp4": "/EnterTek-Solutions/static/media/vide-122-ipad.4bd58ba8.mp4",
+    "static/media/vide-122-mobile.9697cacf.mp4": "/EnterTek-Solutions/static/media/vide-122-mobile.9697cacf.mp4",
+    "static/media/vide-122.9d0897d5.mp4": "/EnterTek-Solutions/static/media/vide-122.9d0897d5.mp4",
+    "static/media/video-img-mobile.5a26b069.png": "/EnterTek-Solutions/static/media/video-img-mobile.5a26b069.png",
+    "static/media/video-img.af9d164e.png": "/EnterTek-Solutions/static/media/video-img.af9d164e.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a2637cca.js",
-    "static/js/2.f285429e.chunk.js",
-    "static/css/main.f981c168.chunk.css",
-    "static/js/main.1f3187f6.chunk.js"
+    "static/js/runtime-main.7fcf6303.js",
+    "static/js/2.7291c95f.chunk.js",
+    "static/css/main.803d3026.chunk.css",
+    "static/js/main.ff524218.chunk.js"
   ]
 }
