@@ -244,7 +244,9 @@ html{
 
 .wave-contact{
   position: relative;
-  bottom: -3%;
+  bottom: -30%;
+  height: 300px;
+  z-index: -20;
 }
 
 .about-us-container{
