@@ -244,7 +244,7 @@ html{
 
 .wave-contact{
   position: relative;
-  bottom: -30%;
+  bottom: -36%;
   height: 300px;
   z-index: -20;
 }
@@ -469,6 +469,15 @@ input::placeholder {
     bottom: -75px;
     height: 42%;
   }
+
+  .wave-contact{
+    position: relative;
+    bottom: -15%;
+    height: 250px;
+    border: solid red;
+    z-index: 3;
+  }
+  
   .btn-menu{
     background: none;
     border: none;
@@ -514,7 +523,7 @@ input::placeholder {
   }
 
   #contact{
-    padding: 150px 0px ;
+    padding: 40px 0px ;
     position: relative;
     top:-355px;
   }
@@ -567,6 +576,7 @@ input::placeholder {
     font-weight: 600;
     margin-bottom: 20px;
     text-align: center;
+    z-index: 30;
   }
 
   .about-us-paragraph{
