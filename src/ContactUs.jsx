@@ -63,7 +63,10 @@ function ContactUs () {
     };
     return (
         <section id="contact">
-            <MediaQuery maxWidth={1050}>
+           
+            <div className="contact-us-container flex justify-content-center align-items-center ">
+
+            <MediaQuery maxWidth={1250}>
                 <Wave 
                     className="wave-contact"
                     fill="#6239F5"
@@ -76,7 +79,7 @@ function ContactUs () {
                     }}
                 />
            </MediaQuery>
-                <MediaQuery minWidth={1052}>
+                <MediaQuery minWidth={1252}>
                     <Wave className="wave-contact"
                         fill="#6239F5"
                         paused={false}
@@ -88,10 +91,10 @@ function ContactUs () {
                         }}
                     />
             </MediaQuery>
-            <div className="contact-us-container flex justify-content-center align-items-center ">
+
                 <div className="flex justify-content-center ">
-                    <MediaQuery maxWidth={1050}>{ CountriesMobile() }</MediaQuery>
-                    <MediaQuery minWidth={1050}>{ CountriesDesktop() }</MediaQuery>
+                    <MediaQuery maxWidth={1250}>{ CountriesMobile() }</MediaQuery>
+                    <MediaQuery minWidth={1252}>{ CountriesDesktop() }</MediaQuery>
                 <div className="flex input-container  align-items-end ">
                 <div className="flex ">
                     <input className="input-mail poppins-font input-a-size" type="text" placeholder=" Name"/>

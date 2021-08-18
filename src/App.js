@@ -1,5 +1,6 @@
 import React,{ useState, useEffect } from 'react';
 import AboutUs from './AboutUs';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import ContactUs from './ContactUs';
 import Header from './Header';
@@ -23,23 +24,29 @@ function App(props) {
         window.addEventListener('scroll', changeNav);
     }, []);
   return (
-    <div className="app">
-      <MediaQuery maxWidth={1050}>
+    <Router className="app">
+      <MediaQuery maxWidth={1250}>
         <NavBarMobile scrollNav={scrollNav}/>
       </MediaQuery >
-      <MediaQuery minWidth={1052}>
+      <MediaQuery minWidth={1252}>
         <NavBar scrollNav={scrollNav}/>
       </MediaQuery>
-      <Header/>
-      <AboutUs/>
-      <MediaQuery maxWidth={1050}>
-        <ServicesMolible/>
-      </MediaQuery>
-      <MediaQuery minWidth={1050}>
-        <ServicesDesk/>
-      </MediaQuery>
-      <ContactUs/>
-    </div>
+      <Switch>
+        <Route exact path="/EnterTek-Solutions/about">
+          <AboutUs/>
+        </Route>
+        <Route  path="/EnterTek-Solutions">
+          <Header/>
+          <MediaQuery maxWidth={1250}>
+            <ServicesMolible/>
+          </MediaQuery>
+          <MediaQuery minWidth={1251}>
+            <ServicesDesk/>
+          </MediaQuery>
+          <ContactUs/>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

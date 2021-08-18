@@ -1,12 +1,12 @@
 import React from 'react';
 import Wave from "react-wavify";
 import ReactPlayer from 'react-player';
-import MediaQuery from 'react-responsive'
-import video from "./resouces/vide-122-c.mp4";
-import videoMobile from "./resouces/vide-122-mobile.mp4"
+import MediaQuery from 'react-responsive';
+import video from "./resouces/vide-122-code-3.mp4";
+import videoMobile from "./resouces/vide-122-mobile.mp4";
 import videoIpad from "./resouces/vide-122-ipad.mp4";
 import videoImg from "./resouces/video-img.png";
-import videoImgMobile from "./resouces/video-img-mobile.png"
+import videoImgMobile from "./resouces/video-img-mobile.png";
 import Typewriter from 'typewriter-effect';
 
 
@@ -46,7 +46,7 @@ function Header() {
                     <div className="video-contenedor">
                         <ReactPlayer
                                 url={video}
-                                width="100%"
+                                width="100"
                                 height="100"
                                 playing
                                 muted

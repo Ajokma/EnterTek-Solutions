@@ -11,7 +11,7 @@
 }
 .video-contenedor{
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   mix-blend-mode:overlay;
   opacity: 0.6;
@@ -45,6 +45,7 @@
   bottom: -2%;
   height: 23%;
 }
+
 
 .wave-2{
   position: absolute;
@@ -126,11 +127,11 @@
 }
 
 .txt-slogan{
-  font-size: 85px;
-  line-height: 99px;
+  font-size: 105px;
+  line-height: 109px;
   color: white;
   font-weight: 400;
-  width: 906px;
+  width: 1106px;
   height:244px;
   text-align: center;
   text-shadow: 1.5px 1.5px 3px rgb(91, 5, 99,0.1);
@@ -138,10 +139,6 @@
 
 .span-slogan{
   font-weight: 800;
-}
-
-.hola{
-  border: solid red;
 }
 
 .navbar{
@@ -217,55 +214,78 @@ a:hover{
   margin-bottom: 150px;
 }
 
-
-html{
-  scroll-behavior: smooth;
-}
-
-#about-us{
-  padding: 230px 0px 0px;
-  position: relative;
-  top: -250px;}
-
 #services-desktop{
-  padding: 150px 0px ;
+  padding: 420px 0px 300px;
   position: relative;
   top:-403px;
-  height:1799px;
+  height:2200px;
   z-index: -100;
 }
 
 #contact{
-  padding: 150px 0px ;
+  padding: 290px 0px ;
   position: relative;
   top:-403px;
   height:720px;
 }
 
-.wave-contact{
+.btn-video{
   position: relative;
-  bottom: -36%;
-  height: 300px;
+  top: 234px;
+  z-index: 3;
+}
+
+.borar{
+  width:800px;
+  height: 1180px;
+  background-image: linear-gradient(to top , rgba(34, 30, 63), rgba(34, 30, 63),rgba(34, 30, 63), rgba(34, 30, 63, 0.7), rgba(34, 30, 63, 0.1)) ;
+  position: relative;
+  top:0px;
+}
+
+.about-us-container-title{
+  font-size: 200px;
+  font-weight: 800;
+  position: relative;
+  top: 250px;
+}
+
+.wave-contact{
+  position: absolute;
+  top: 20%;
   z-index: -20;
 }
 
 .about-us-container{
   width: 100vw;
-  height: 120%;
-  padding: 100px 0 150px ;
+  height: 1900px;
   background-color:#221E3F;
-  
+  flex-direction: column;
+  align-items: center;
 }
+
+.parallax-container{
+  width: 95vw;
+  height: 50%;
+  margin-top: 70px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .about-us-paragraph{
   width: 764px;
   height: 466px;
   font-size: 16px;
   line-height: 35px;
+  position: relative;
+  text-align: center;
+  top: 100px;
 }
 
 .title-section {
-  font-size: 50px;
+  font-size: 60px;
   line-height: 42px;
   font-weight: 600;
 }
@@ -280,8 +300,8 @@ html{
   border-radius: 26px;
   padding: 23px;
   margin-top: 25px;
- 
 }
+
 .services-desktop-container{
   width: 100vw;
   height: 144%;
@@ -344,8 +364,6 @@ html{
   padding:44px 0 100px;
   background: #6239F5;
 }
-
-
 
 .input-container{
   width: 614px;
@@ -438,11 +456,11 @@ input::placeholder {
   color:white;
 }
 
-@media (max-width: 450px) {
+@media  (max-width: 700px) {
 
   .header-container{
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
   }
 
   .video-mobile{
@@ -452,7 +470,7 @@ input::placeholder {
 
   .video-contenedor{
     width: 100vw;
-    height:100vh;
+    height:125vh;
     overflow: hidden;
     position: relative;
     left:0;
@@ -465,16 +483,14 @@ input::placeholder {
 
   .wave{
     position: absolute;
-    bottom: -75px;
-    height: 42%;
+    bottom: -10px;
+    height: 32%;
   }
 
   .wave-contact{
-    position: relative;
-    bottom: -15%;
-    height: 250px;
-    border: solid red;
-    z-index: 3;
+    position: absolute;
+    top: 21%;
+    z-index: 20;
   }
   
   .btn-menu{
@@ -509,22 +525,9 @@ input::placeholder {
 
   #services-mobile{
     height: 3949px;
-    padding: 150px 0px 0px;
-    position: relative;
-    top: -419px;
-  }
-
-  #about-us{
-    height: 100%;
     padding: 200px 0px 0px;
     position: relative;
-    top: -279;
-  }
-
-  #contact{
-    padding: 40px 0px ;
-    position: relative;
-    top:-355px;
+    top: -419px;
   }
 
   .navbar-options{
@@ -567,7 +570,18 @@ input::placeholder {
 
   .about-us-container{
     width: 100vw;
+    height: 200vh;
     padding-top: 20px;
+  }
+
+  .about-us-container-title{
+    font-size: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-weight: 800;
+    position: relative;
+    top: 250px;
+    margin-bottom: 40px;
   }
 
   .title-section {
@@ -575,16 +589,21 @@ input::placeholder {
     font-weight: 600;
     margin-bottom: 20px;
     text-align: center;
-    z-index: 30;
+  }
+
+  .img-about-mobile{
+    position: absolute;
+    margin-top: 190px;
+    width: 100vw;
+    opacity: 0.5;
   }
 
   .about-us-paragraph{
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     font-size: 15px;
     line-height: 25px;
-    padding-left: 13px;
-    padding-right: 13px;
+    padding: 250px 13px 0;
     text-align: center;
   }
 
@@ -729,8 +748,8 @@ input::placeholder {
   }
 
   .button{
-    width: 109px;
-    height: 38px;
+    width: 119px;
+    height: 42px;
     background: #02C6F8;
     border-radius: 50px;
     border: none;
@@ -738,6 +757,7 @@ input::placeholder {
     font-weight: 600;
     font-size: 15px;
     z-index: 1;
+    margin-bottom: 90px;
   }
 
   .btn-countries-container{
@@ -793,10 +813,10 @@ input::placeholder {
 
 }
 
-@media (min-width: 700px) and (max-width: 1050px){
+@media (min-width: 700px) and (max-width: 1250px){
   .header-container{
     width: 100vw;
-    height: 100vh ;
+    height: 110vh ;
   }
 
   .btn-menu{
@@ -829,17 +849,15 @@ input::placeholder {
   }
 
   #services-mobile{
-    height: 2200px;
+    height: 2390px;
     position: relative;
     bottom: 270px;
-  }
-
-  #about-us{
-    padding: 250px 0px 0px;
+    padding-top: 130px;
   }
 
   #contact{
     padding: 150px 0px ;
+    z-index: 3;
   }
 
   .services-mobile-container{
@@ -1060,6 +1078,119 @@ input::placeholder {
     font-size: 17px;
     line-height: 23px;
     text-align:center;
+  }
+
+  .wave-contact{
+    position: absolute;
+    top: 2%;
+    z-index: -20;
+  }
+
+}
+
+@media  (max-width: 370px){
+  
+  #services-mobile{
+    height: 4050px;
+    padding: 260px 0px 0px;
+    position: relative;
+    top: -419px;
+  }
+
+  #contact{
+    padding: 300px 0px ;
+    position: relative;
+    top:-355px;
+  }
+
+  .wave-contact{
+    position: absolute;
+    top: 21%;
+    z-index: 20;
+  }
+
+  .about-us-container{
+    width: 100vw;
+    height: 200vh;
+    padding-top: 20px;
+  }
+
+  .about-us-container-title{
+    font-size: 90px;
+    line-height: 80px;
+    text-align: center;
+    font-weight: 800;
+    position: relative;
+    top: 220px;
+    margin-bottom: 40px;
+  }
+
+  .img-about-mobile{
+    position: absolute;
+    margin-top: 140px;
+    width: 100vw;
+    opacity: 0.5;
+  }
+
+  .about-us-paragraph{
+    width: 100vw;
+    height: 100vh;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 200px 13px 0;
+    text-align: center;
+  }
+}
+
+@media  (max-width: 356px){
+
+  #services-mobile{
+    height: 3979px;
+    padding: 260px 0px 0px;
+    position: relative;
+    top: -419px;
+  }
+  #contact{
+    padding: 590px 0px ;
+    position: relative;
+    top:-355px;
+  }
+
+  .wave-contact{
+    position: absolute;
+    top: 38%;
+    z-index: 20;
+  }
+  .about-us-container{
+    width: 100vw;
+    height: 260vh;
+    padding-top: 20px;
+  }
+
+  .about-us-container-title{
+    font-size: 90px;
+    line-height: 80px;
+    text-align: center;
+    font-weight: 800;
+    position: relative;
+    top: 220px;
+    margin-bottom: 40px;
+  }
+
+  .img-about-mobile{
+    position: absolute;
+    margin-top: 140px;
+    width: 100vw;
+    opacity: 0.5;
+  }
+
+  .about-us-paragraph{
+    width: 100vw;
+    height: 100vh;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 200px 13px 0;
+    text-align: center;
   }
 
 }

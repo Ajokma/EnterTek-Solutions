@@ -2,6 +2,7 @@ import React,{ useState } from 'react'
 import logo from "./resouces/enterte.png"
 import menuHamb from "./resouces/icons/menu.png"
 import closeMenuHamb from "./resouces/icons/close-menu.png"
+import {NavLink} from 'react-router-dom'
 
 function NavBarMobile({scrollNav}) {
     const [menu, setMenu] = useState(false);
@@ -15,9 +16,16 @@ function NavBarMobile({scrollNav}) {
         return (
             <div className="option-menu-container">
                 <ul className="flex flex-column navbar poppins-font">
-                    <li onClick={showMenuOption}> <a className="navbar-options color-white text-decoration-none" href="#about-us">About us</a></li>
-                    <li onClick={showMenuOption} ><a className="navbar-options color-white text-decoration-none" href="#services-mobile">Services</a></li>
-                    <li onClick={showMenuOption} ><a className="navbar-options color-white text-decoration-none" href="#contact">Contact</a></li>
+                    <li onClick={showMenuOption}>
+                        <NavLink className="navbar-options color-white text-decoration-none" to="/EnterTek-Solutions/about">About us</NavLink>
+                    </li>
+                    <li onClick={showMenuOption} >
+                        <NavLink className="navbar-options color-white text-decoration-none" to="/EnterTek-Solutions/:services-desktop">Services</NavLink>
+
+                    </li>
+                    <li onClick={showMenuOption} >
+                    <NavLink className="navbar-options color-white text-decoration-none" to="/EnterTek-Solutions/:services-desktop">Contact</NavLink>
+                    </li>
                 </ul>
             </div>
         )
@@ -25,7 +33,7 @@ function NavBarMobile({scrollNav}) {
 
     return (
         <div className={scrollNav?("navbar-container flex background-scroll "):("navbar-container flex ")}>
-            <a href="#intro"> <img height="14px" src={logo}alt="entertek-logo" /> </a>
+            <NavLink to="/EnterTek-Solutions"><img height="14px" src={logo}alt="entertek-logo" /></NavLink>
             <select className="navbar-options poppins-font color-white select " >
                 <option value="">English</option>
                 <option value="">Español</option>
