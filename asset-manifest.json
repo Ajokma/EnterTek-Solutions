@@ -1,23 +1,20 @@
 {
   "files": {
-    "main.css": "/EnterTek-Solutions/static/css/main.3f213cc2.chunk.css",
-    "main.js": "/EnterTek-Solutions/static/js/main.be9d3b42.chunk.js",
-    "main.js.map": "/EnterTek-Solutions/static/js/main.be9d3b42.chunk.js.map",
+    "main.css": "/EnterTek-Solutions/static/css/main.66a6a351.chunk.css",
+    "main.js": "/EnterTek-Solutions/static/js/main.e04ee362.chunk.js",
+    "main.js.map": "/EnterTek-Solutions/static/js/main.e04ee362.chunk.js.map",
     "runtime-main.js": "/EnterTek-Solutions/static/js/runtime-main.4b3b4f08.js",
     "runtime-main.js.map": "/EnterTek-Solutions/static/js/runtime-main.4b3b4f08.js.map",
-    "static/js/2.ec87c31d.chunk.js": "/EnterTek-Solutions/static/js/2.ec87c31d.chunk.js",
-    "static/js/2.ec87c31d.chunk.js.map": "/EnterTek-Solutions/static/js/2.ec87c31d.chunk.js.map",
+    "static/js/2.65aa5e7a.chunk.js": "/EnterTek-Solutions/static/js/2.65aa5e7a.chunk.js",
+    "static/js/2.65aa5e7a.chunk.js.map": "/EnterTek-Solutions/static/js/2.65aa5e7a.chunk.js.map",
     "static/js/3.f5c4cb51.chunk.js": "/EnterTek-Solutions/static/js/3.f5c4cb51.chunk.js",
     "static/js/3.f5c4cb51.chunk.js.map": "/EnterTek-Solutions/static/js/3.f5c4cb51.chunk.js.map",
     "index.html": "/EnterTek-Solutions/index.html",
-    "static/css/main.3f213cc2.chunk.css.map": "/EnterTek-Solutions/static/css/main.3f213cc2.chunk.css.map",
-    "static/js/2.ec87c31d.chunk.js.LICENSE.txt": "/EnterTek-Solutions/static/js/2.ec87c31d.chunk.js.LICENSE.txt",
+    "static/css/main.66a6a351.chunk.css.map": "/EnterTek-Solutions/static/css/main.66a6a351.chunk.css.map",
+    "static/js/2.65aa5e7a.chunk.js.LICENSE.txt": "/EnterTek-Solutions/static/js/2.65aa5e7a.chunk.js.LICENSE.txt",
     "static/media/ai.ef02b91a.png": "/EnterTek-Solutions/static/media/ai.ef02b91a.png",
     "static/media/cryptocurrency.26d9256f.png": "/EnterTek-Solutions/static/media/cryptocurrency.26d9256f.png",
     "static/media/enterte.46f2680c.png": "/EnterTek-Solutions/static/media/enterte.46f2680c.png",
-    "static/media/facebook.23df9b93.png": "/EnterTek-Solutions/static/media/facebook.23df9b93.png",
-    "static/media/linkedin.55182fed.png": "/EnterTek-Solutions/static/media/linkedin.55182fed.png",
-    "static/media/twitter.51e39279.png": "/EnterTek-Solutions/static/media/twitter.51e39279.png",
     "static/media/vide-122-code-3.7de4eb31.mp4": "/EnterTek-Solutions/static/media/vide-122-code-3.7de4eb31.mp4",
     "static/media/vide-122-ipad-2.e08139ae.mp4": "/EnterTek-Solutions/static/media/vide-122-ipad-2.e08139ae.mp4",
     "static/media/vide-122-mobile.790c966c.mp4": "/EnterTek-Solutions/static/media/vide-122-mobile.790c966c.mp4",
@@ -28,8 +25,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.4b3b4f08.js",
-    "static/js/2.ec87c31d.chunk.js",
-    "static/css/main.3f213cc2.chunk.css",
-    "static/js/main.be9d3b42.chunk.js"
+    "static/js/2.65aa5e7a.chunk.js",
+    "static/css/main.66a6a351.chunk.css",
+    "static/js/main.e04ee362.chunk.js"
   ]
 }
