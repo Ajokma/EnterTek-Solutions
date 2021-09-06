@@ -1,11 +1,7 @@
 import React,{ useState } from 'react'
-import Wave from "react-wavify";
 import ContactEurope from './ContactEurope';
 import ContactNorthAmerica from './ContactNorthAmerica';
 import MediaQuery from 'react-responsive';
-import fb from "./resouces/icons/facebook.png";
-import Linkedin from "./resouces/icons/linkedin.png";
-import tw from "./resouces/icons/twitter.png";
 
 function ContactUs () {
     const [show, setShow] = useState(false);
@@ -66,63 +62,33 @@ function ContactUs () {
            
             <div className="contact-us-container flex justify-content-center align-items-center ">
 
-            <MediaQuery maxWidth={1250}>
-                <Wave 
-                    className="wave-contact"
-                    fill="#6239F5"
-                    paused={false}
-                    options={{
-                        height:90,
-                        amplitude: 40,
-                        speed: 0.18,
-                        points:2
-                    }}
-                />
-           </MediaQuery>
-                <MediaQuery minWidth={1252}>
-                    <Wave className="wave-contact"
-                        fill="#6239F5"
-                        paused={false}
-                        options={{
-                            height:29,
-                            amplitude: 80,
-                            speed: 0.29,
-                            points:2
-                        }}
-                    />
-            </MediaQuery>
-
-                <div className="flex justify-content-center ">
-                    <MediaQuery maxWidth={1250}>{ CountriesMobile() }</MediaQuery>
-                    <MediaQuery minWidth={1252}>{ CountriesDesktop() }</MediaQuery>
-                <div className="flex input-container  align-items-end ">
-                <div className="flex ">
-                    <input className="input-mail poppins-font input-a-size" type="text" placeholder=" Name"/>
-                    <input className="input-mail poppins-font input-a-size" type="text" placeholder=" Email" />
+                    <div className="flex justify-content-center ">
+                        <MediaQuery maxWidth={1250}>{ CountriesMobile() }</MediaQuery>
+                        <MediaQuery minWidth={1252}>{ CountriesDesktop() }</MediaQuery>
+                    <div className="flex input-container  align-items-end ">
+                    <div className="flex ">
+                        <input className="input-mail poppins-font input-a-size" type="text" placeholder=" Name"/>
+                        <input className="input-mail poppins-font input-a-size" type="text" placeholder=" Email" />
+                    </div>
+                    <div className="flex ">
+                        <input className="input-mail poppins-font input-a-size" type="text"  placeholder="Phone"/>
+                        <input className="input-mail poppins-font input-a-size" type="text" placeholder="Address"/>
+                    </div>
+                    <select className="input-mail poppins-font input-b-size " >
+                        <option selected value="">Please select zone</option>
+                        <option value="North America">North America</option>
+                        <option value="Europe">Europe</option>
+                        <option value="South America">South America</option>
+                    </select>
+                    <input className="input-mail poppins-font input-b-size " type="text" placeholder="Subject" />
+                    <textarea  className="input-message poppins-font" type="text" placeholder="Type your message here..." />
+                    <button className="button poppins-font ">Submit</button>
+                    </div>
+                    </div>
                 </div>
-                <div className="flex ">
-                    <input className="input-mail poppins-font input-a-size" type="text"  placeholder="Phone"/>
-                    <input className="input-mail poppins-font input-a-size" type="text" placeholder="Address"/>
-                </div>
-                <select className="input-mail poppins-font input-b-size " >
-                    <option selected value="">Please select zone</option>
-                    <option value="North America">North America</option>
-                    <option value="Europe">Europe</option>
-                    <option value="South America">South America</option>
-                </select>
-                <input className="input-mail poppins-font input-b-size " type="text" placeholder="Subject" />
-                <textarea  className="input-message poppins-font" type="text" placeholder="Type your message here..." />
-                <button className="button poppins-font ">Submit</button>
-                </div>
-                </div>
-            </div>
-            <div className= "social-media-container flex justify-content-btw align-items-center poppins-font">
-                    <p> Entertek solutions.</p>
-                    <div >
-                        <img className="margin-right-24px" width="25px" src={fb} alt="facebook" />
-                        <img className="margin-right-24px" width="25px"  src={tw}alt="twitter" />
-                        <img width="25px"  src={Linkedin} alt="linkedin" />
-                    </div> 
+                <div className= "social-media-container flex justify-content-center align-items-center poppins-font">
+                        <p> Copyright © 2021 EnterTEK Solutions, Inc. All rights reserved.</p>
+                        
             </div>
         </section>
     )

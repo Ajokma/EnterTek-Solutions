@@ -4,19 +4,18 @@ import ReactPlayer from 'react-player';
 import MediaQuery from 'react-responsive';
 import video from "./resouces/vide-122-code-3.mp4";
 import videoMobile from "./resouces/vide-122-mobile.mp4";
-import videoIpad from "./resouces/vide-122-ipad.mp4";
+import videoIpad from "./resouces/vide-122-ipad-2.mp4";
 import videoImg from "./resouces/video-img.png";
 import videoImgMobile from "./resouces/video-img-mobile.png";
 import Typewriter from 'typewriter-effect';
 
-
-
 function Header() {
     return (
         <div>
-            <div id="intro"className="p-absolute header-container gradient-header z-index-10 ">
+            <div id="intro"className="p-absolute header-container  z-index-10 ">
+                <div className="gradient-header"></div>
                 <div className="black"></div> 
-                <MediaQuery maxWidth={650}>
+                <MediaQuery maxWidth={500}>
                     <div className="video-contenedor">
                     <ReactPlayer  className="video-mobile"
                         url={videoMobile}
@@ -29,7 +28,7 @@ function Header() {
                     />
                     </div>
                 </MediaQuery>
-                <MediaQuery minWidth={651} maxWidth={1050}>
+                <MediaQuery minWidth={551} maxWidth={1254}>
                     <div className="video-contenedor">
                         <ReactPlayer
                                 url={videoIpad}
@@ -42,7 +41,8 @@ function Header() {
                             />
                     </div>
                 </MediaQuery> 
-               <MediaQuery minWidth={1051}>
+               <MediaQuery minWidth={1255}>
+                   <div className="hidden">
                     <div className="video-contenedor">
                         <ReactPlayer
                                 url={video}
@@ -54,6 +54,7 @@ function Header() {
                                 rewind
                                 onBuffer={videoImg}
                             />
+                    </div>
                     </div>
                 </MediaQuery> 
             </div>

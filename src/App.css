@@ -9,15 +9,26 @@
   width: 100vw;
   height: 100vh;
 }
+
 .video-contenedor{
-  width: 100vw;
-  height: 100%;
+  position: absolute;
+  width: 139vw;
+  height: 233vh;
   overflow: hidden;
   mix-blend-mode:overlay;
   opacity: 0.6;
 }
 
+.hidden{
+  position: absolute;
+  overflow: hidden; 
+  width: 100vw;
+  height: 102vh;
+}
+
 .gradient-header{
+  width: 100vw;
+  height: 110vh;
   margin-bottom: 3px;
   z-index: -4;
   background-image: linear-gradient(to left, #8B89D0, #DD9FD4);
@@ -214,21 +225,6 @@ a:hover{
   margin-bottom: 150px;
 }
 
-#services-desktop{
-  padding: 420px 0px 300px;
-  position: relative;
-  top:-403px;
-  height:2200px;
-  z-index: -100;
-}
-
-#contact{
-  padding: 290px 0px ;
-  position: relative;
-  top:-403px;
-  height:720px;
-}
-
 .btn-video{
   position: relative;
   top: 234px;
@@ -248,12 +244,6 @@ a:hover{
   font-weight: 800;
   position: relative;
   top: 250px;
-}
-
-.wave-contact{
-  position: absolute;
-  top: 20%;
-  z-index: -20;
 }
 
 .about-us-container{
@@ -304,7 +294,7 @@ a:hover{
 
 .services-desktop-container{
   width: 100vw;
-  height: 144%;
+  height: 100%;
   background-color:#221E3F;
   padding: 70px 0 ;
 }
@@ -361,7 +351,7 @@ a:hover{
 .contact-us-container{
   width: 100vw;
   height: 755px;
-  padding:44px 0 100px;
+  padding:124px 0 100px;
   background: #6239F5;
 }
 
@@ -460,7 +450,7 @@ input::placeholder {
 
   .header-container{
     width: 100vw;
-    height: 120vh;
+    height: 100vh;
   }
 
   .video-mobile{
@@ -470,7 +460,7 @@ input::placeholder {
 
   .video-contenedor{
     width: 100vw;
-    height:125vh;
+    height:100vh;
     overflow: hidden;
     position: relative;
     left:0;
@@ -487,12 +477,6 @@ input::placeholder {
     height: 32%;
   }
 
-  .wave-contact{
-    position: absolute;
-    top: 21%;
-    z-index: 20;
-  }
-  
   .btn-menu{
     background: none;
     border: none;
@@ -523,12 +507,6 @@ input::placeholder {
     top: -60px;
   }
 
-  #services-mobile{
-    height: 3949px;
-    padding: 200px 0px 0px;
-    position: relative;
-    top: -419px;
-  }
 
   .navbar-options{
     cursor: pointer;
@@ -570,8 +548,7 @@ input::placeholder {
 
   .about-us-container{
     width: 100vw;
-    height: 200vh;
-    padding-top: 20px;
+    height: 190vh;
   }
 
   .about-us-container-title{
@@ -603,7 +580,7 @@ input::placeholder {
     height: 100vh;
     font-size: 15px;
     line-height: 25px;
-    padding: 250px 13px 0;
+    padding: 10px 13px 40px;
     text-align: center;
   }
 
@@ -622,7 +599,7 @@ input::placeholder {
     height: 100vh;
     background-image: linear-gradient(to top , rgba(31, 2, 31, 0.8), rgba(21, 2, 36, 0.3),rgba(0, 0, 0, 0.1), rgba(21, 2, 36, 0.1), rgba(21, 2, 36, 0.1), rgba(21, 2, 36, 0.2), rgba(21, 2, 36, 0.3),rgba(0, 0, 0, 0.4)) ;
     position:absolute;
-    bottom: 0;
+    bottom: -39px;
     z-index: 3;
   }
 
@@ -634,7 +611,7 @@ input::placeholder {
 
   .contact-us-container{
     width: 100vw;
-    height: 1200px;
+    height: 100%;
   }
 
   .color-white{
@@ -776,6 +753,7 @@ input::placeholder {
 
   .services-mobile-container{
     width: 100vw;
+    height: 90%;
     background-color:#221E3F;
     padding-bottom: 50%;
   }
@@ -807,16 +785,55 @@ input::placeholder {
   }
 
   .social-media-container{
-    padding: 0px 20px 0px;
-    font-size: 12px;
+    padding: 0px 15px 0px;
+    font-size: 11px;
+    width: 100%;
+    height: 100px;
+  }
+  
+  .contact-us-container{
+    width: 100%;
+    height: 100%;
   }
 
 }
 
-@media (min-width: 700px) and (max-width: 1250px){
+@media (min-width: 1000px) and  (max-width: 1250px){
+  
+  .video-contenedor{
+    position: absolute;
+    width: 209vw;
+    height: 254vh;
+    mix-blend-mode:overlay;
+    opacity: 0.6;
+  }
+  
+  .hidden{
+    position: absolute;
+    overflow: hidden; 
+    width: 100vw;
+    height: 156vh;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1250px){
   .header-container{
     width: 100vw;
-    height: 110vh ;
+    height: 100vh ;
+  }
+
+  .video-contenedor{
+    position: absolute;
+    width: 100vw;
+    height: 120%;
+    mix-blend-mode:overlay;
+    opacity: 0.6;
+  }
+
+  .hidden{
+    overflow: hidden; 
+    width: 100vw;
+    height: 126vh;
   }
 
   .btn-menu{
@@ -826,6 +843,22 @@ input::placeholder {
     left: 89%;
     z-index: 1;
     padding-top: 3px;
+  }
+
+  .about-us-container-title{
+    font-size: 190px;
+    line-height: 150px;
+    font-weight: 800;
+    position: relative;
+    top: 250px;
+    text-align: center;
+    padding: 0 0 40px;
+  }
+  .social-media-container{
+    padding: 0px 20px 0px;
+    font-size: 14px;
+    width: 100%;
+    height: 100px;
   }
 
   .navbar-container{
@@ -848,22 +881,11 @@ input::placeholder {
     transition:  0.5s all ease-in-out ;
   }
 
-  #services-mobile{
-    height: 2390px;
-    position: relative;
-    bottom: 270px;
-    padding-top: 130px;
-  }
-
-  #contact{
-    padding: 150px 0px ;
-    z-index: 3;
-  }
-
   .services-mobile-container{
     width: 100vw;
     background-color:#221E3F;
     padding-bottom: 50%;
+    padding-top: 5%;
   }
 
   .icon-menu{
@@ -905,6 +927,7 @@ input::placeholder {
     line-height: 85px;
     color: white;
     font-weight: 400;
+    margin-top: 50px;
     width: 560px;
     height: 290px;
     text-align: center;
@@ -1060,6 +1083,7 @@ input::placeholder {
 
   .about-us-container{
     width: 100vw;
+    height: 1500px;
     flex-direction: column;
     align-items: center;
     padding-top: 0;
@@ -1074,40 +1098,15 @@ input::placeholder {
 
   .about-us-paragraph{
     width: 700px;
-    height: 100%;
+    height: 50%;
     font-size: 17px;
     line-height: 23px;
     text-align:center;
   }
 
-  .wave-contact{
-    position: absolute;
-    top: 2%;
-    z-index: -20;
-  }
-
 }
 
 @media  (max-width: 370px){
-  
-  #services-mobile{
-    height: 4050px;
-    padding: 260px 0px 0px;
-    position: relative;
-    top: -419px;
-  }
-
-  #contact{
-    padding: 300px 0px ;
-    position: relative;
-    top:-355px;
-  }
-
-  .wave-contact{
-    position: absolute;
-    top: 21%;
-    z-index: 20;
-  }
 
   .about-us-container{
     width: 100vw;
@@ -1144,23 +1143,6 @@ input::placeholder {
 
 @media  (max-width: 356px){
 
-  #services-mobile{
-    height: 3979px;
-    padding: 260px 0px 0px;
-    position: relative;
-    top: -419px;
-  }
-  #contact{
-    padding: 590px 0px ;
-    position: relative;
-    top:-355px;
-  }
-
-  .wave-contact{
-    position: absolute;
-    top: 38%;
-    z-index: 20;
-  }
   .about-us-container{
     width: 100vw;
     height: 260vh;
