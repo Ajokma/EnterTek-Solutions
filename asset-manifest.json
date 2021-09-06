@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/EnterTek-Solutions/static/css/main.66a6a351.chunk.css",
-    "main.js": "/EnterTek-Solutions/static/js/main.e04ee362.chunk.js",
-    "main.js.map": "/EnterTek-Solutions/static/js/main.e04ee362.chunk.js.map",
+    "main.js": "/EnterTek-Solutions/static/js/main.3e0f9008.chunk.js",
+    "main.js.map": "/EnterTek-Solutions/static/js/main.3e0f9008.chunk.js.map",
     "runtime-main.js": "/EnterTek-Solutions/static/js/runtime-main.4b3b4f08.js",
     "runtime-main.js.map": "/EnterTek-Solutions/static/js/runtime-main.4b3b4f08.js.map",
     "static/js/2.65aa5e7a.chunk.js": "/EnterTek-Solutions/static/js/2.65aa5e7a.chunk.js",
@@ -20,13 +20,12 @@
     "static/media/vide-122-mobile.790c966c.mp4": "/EnterTek-Solutions/static/media/vide-122-mobile.790c966c.mp4",
     "static/media/video-img-mobile.5a26b069.png": "/EnterTek-Solutions/static/media/video-img-mobile.5a26b069.png",
     "static/media/video-img.af9d164e.png": "/EnterTek-Solutions/static/media/video-img.af9d164e.png",
-    "static/media/world-1.fd82e1df.png": "/EnterTek-Solutions/static/media/world-1.fd82e1df.png",
-    "static/media/world-mobile.f8332584.png": "/EnterTek-Solutions/static/media/world-mobile.f8332584.png"
+    "static/media/world-1.fd82e1df.png": "/EnterTek-Solutions/static/media/world-1.fd82e1df.png"
   },
   "entrypoints": [
     "static/js/runtime-main.4b3b4f08.js",
     "static/js/2.65aa5e7a.chunk.js",
     "static/css/main.66a6a351.chunk.css",
-    "static/js/main.e04ee362.chunk.js"
+    "static/js/main.3e0f9008.chunk.js"
   ]
 }
