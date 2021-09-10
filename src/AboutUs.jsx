@@ -6,7 +6,7 @@ import MediaQuery from 'react-responsive';
 function AboutUs() {
     return (
         <>
-            <div className="about-us-container flex ">
+            <div className="about-us-container flex" id="AboutWrapper">
             <MediaQuery maxWidth={1250}>
             <Parallax className="parallax-container"  bgImage={world} strength={500}>
                 <div className=" flex flex-column">
