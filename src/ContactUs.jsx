@@ -2,8 +2,18 @@ import React,{ useState } from 'react'
 import ContactEurope from './ContactEurope';
 import ContactNorthAmerica from './ContactNorthAmerica';
 import MediaQuery from 'react-responsive';
+import ReCAPTCHA from "react-google-recaptcha";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+function onChange(value) {
+    console.log("Captcha:", value);
+    document.getElementById('InputCaptcha').value = value;
+  }
 
 function ContactUs () {
+    const MySwal = withReactContent(Swal);
+
     const [show, setShow] = useState(false);
     const [showE, setShowE] =useState(false);
     const showNorthA =()=>{
@@ -65,11 +75,8 @@ function ContactUs () {
         for (let entry of formData.entries()) {
             user[entry[0]] = entry[1]
         }
-
-        console.log(user);
-
         displayLoading();
-    // Simple POST request with a JSON body using fetch
+
     const requestOptions = {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -82,13 +89,14 @@ function ContactUs () {
             hideLoading();
 
             if (json.success) {
-                alert('Email was sent! Thanks.' + json.message);
+               //alert('Email was sent! Thanks.' );
+               MySwal.fire('Sent!', '', 'success');
             }
             else {
-                alert('Email sent error! Please try again or another way.')
+                //alert('Email sent error! Please try again or another way.')
+                MySwal.fire('Error!', '', 'error');
             }
             e.target.reset();
-
         })    
         .catch(err => console.log('Request Failed', err));    
     }
@@ -122,8 +130,8 @@ function ContactUs () {
 
                     <form className="contact-form" onSubmit={sendEmail}>
                             <div className="flex ">
-                                <input className="input-mail poppins-font input-a-size"  name="from_name" type="text" placeholder=" Name" />
-                                <input className="input-mail poppins-font input-a-size"  name="from_email" type="text" placeholder=" Email" />
+                                <input className="input-mail poppins-font input-a-size"  name="from_name" type="text" placeholder=" Name" required/>
+                                <input className="input-mail poppins-font input-a-size"  name="from_email" type="text" placeholder=" Email" required/>
                             </div>
                             <div className="flex ">
                                 <input className="input-mail poppins-font input-a-size" type="text" name="from_phone" placeholder="Phone" />
@@ -135,12 +143,19 @@ function ContactUs () {
                                 <option value="Europe">Europe</option>
                                 <option value="South America">South America</option>
                             </select>
-                            <input className="input-mail poppins-font input-b-size " type="text" name="subject" placeholder="Subject" />
-                            <textarea className="input-message poppins-font" type="text"  name="message" placeholder="Type your message here..." />
+                            <input className="input-mail poppins-font input-b-size " type="text" name="subject" placeholder="Subject" required/>
+                            <textarea required className="input-message poppins-font" type="text"  name="message" placeholder="Type your message here..." />
                          
+                            
+                            <div className="flex justify-content-around">
+                                <div id="captcha">
+                                    <input type="text" id="InputCaptcha" name="reCaptcha" required/>
+                                    <ReCAPTCHA sitekey="6LfE3V0cAAAAAFCO5V8iuMADOgju6ZQFkJRc9VRH" onChange={onChange} />
+                                </div >
+                                <button type="submit" id="InputSubmitBtn" className="button poppins-font right float-right">Submit</button>
+                            </div>
+
                             <div id="loading"></div>
-                         
-                            <button type="submit" className="button poppins-font ">Submit</button>
                         </form>
                     {/*                         
                     <div className="flex ">

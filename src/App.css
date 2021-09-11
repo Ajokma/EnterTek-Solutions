@@ -10,6 +10,11 @@
   height: 100vh;
 }
 
+#InputCaptcha{
+  position: absolute;
+  z-index: -1;
+}
+
 .video-contenedor{
   position: absolute;
   width: 139vw;
