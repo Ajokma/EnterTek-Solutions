@@ -131,7 +131,7 @@ function ContactUs () {
                     <form className="contact-form" onSubmit={sendEmail}>
                             <div className="flex ">
                                 <input className="input-mail poppins-font input-a-size"  name="from_name" type="text" placeholder=" Name" required/>
-                                <input className="input-mail poppins-font input-a-size"  name="from_email" type="text" placeholder=" Email" required/>
+                                <input className="input-mail poppins-font input-a-size"  name="from_email" type="email" placeholder=" Email" required/>
                             </div>
                             <div className="flex ">
                                 <input className="input-mail poppins-font input-a-size" type="text" name="from_phone" placeholder="Phone" />
