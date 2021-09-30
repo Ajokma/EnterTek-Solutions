@@ -59,9 +59,7 @@ function ContactUs () {
     };
     return (
         <section id="contact">
-           
             <div className="contact-us-container flex justify-content-center align-items-center ">
-
                     <div className="flex justify-content-center ">
                         <MediaQuery maxWidth={1250}>{ CountriesMobile() }</MediaQuery>
                         <MediaQuery minWidth={1252}>{ CountriesDesktop() }</MediaQuery>

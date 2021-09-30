@@ -128,7 +128,7 @@ function ServicesMolible() {
                     </div>
                     <div className="card-services-container flex flex-column">
                         <img className="icon-card"  src={cloud} alt="cloud" />
-                        <h1 className="poppins-font title-card">Colud</h1>
+                        <h1 className="poppins-font title-card">Cloud</h1>
                         <p className="poppins-font paragraph-card"> We work with Amazon Web Services (AWS), Microsoft Azure, IBM Cloud, Oracle Cloud Infrastructure (OCI) and more.  </p>
                     </div>
                     <div className="card-services-container flex flex-column">

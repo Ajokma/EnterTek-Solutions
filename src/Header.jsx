@@ -1,65 +1,33 @@
 import React from 'react';
-import Wave from "react-wavify";
-import ReactPlayer from 'react-player';
-import MediaQuery from 'react-responsive';
-import video from "./resouces/vide-122-code-3.mp4";
-import videoMobile from "./resouces/vide-122-mobile.mp4";
-import videoIpad from "./resouces/vide-122-ipad-2.mp4";
-import videoImg from "./resouces/video-img.png";
-import videoImgMobile from "./resouces/video-img-mobile.png";
 import Typewriter from 'typewriter-effect';
+import MediaQuery from 'react-responsive';
+import back from "./resouces/esfera3.png";
+import backPhone from "./resouces/esfera-phone3.png";
 
 function Header() {
     return (
         <div>
-            <div id="intro"className="p-absolute header-container  z-index-10 ">
-                <div className="gradient-header"></div>
-                <div className="black"></div> 
-                <MediaQuery maxWidth={500}>
-                    <div className="video-contenedor">
-                    <ReactPlayer  className="video-mobile"
-                        url={videoMobile}
-                        width="120%"
-                        height="120%"
-                        playing
-                        muted
-                        loop
-                        onBuffer={videoImgMobile}
-                    />
-                    </div>
-                </MediaQuery>
-                <MediaQuery minWidth={551} maxWidth={1254}>
-                    <div className="video-contenedor">
-                        <ReactPlayer
-                                url={videoIpad}
-                                width="100%"
-                                height="100"
-                                playing
-                                muted
-                                loop
-                                rewind
-                            />
-                    </div>
-                </MediaQuery> 
-               <MediaQuery minWidth={1255}>
-                   <div className="hidden">
-                    <div className="video-contenedor">
-                        <ReactPlayer
-                                url={video}
-                                width="100"
-                                height="100"
-                                playing
-                                muted
-                                loop
-                                rewind
-                                onBuffer={videoImg}
-                            />
-                    </div>
-                    </div>
-                </MediaQuery> 
+            <div className=" header-container  z-index-10 "> 
+            <div className="medida-full flex flex-column">
+            <MediaQuery maxWidth={1050}>
+                <div className="circle-container flex ">
+                    <img src={backPhone} alt="background" width="100%" />
+                </div> 
+            </MediaQuery>
+            <MediaQuery minWidth={1051}>
+                <div className="circle-container flex ">
+                    <img src={back} alt="background" width="100%" />
+                </div>
+            </MediaQuery>
+            
+            <div className="circle-animated-containter" >
+                <div className="circle-1"></div>
+                <div className="circle-2"></div>
+                <div className="circle-3"></div>
+                <div className="circle-4"></div>
+                <div className="circle-5"></div>
             </div>
-            <div className="header-container flex flex-column">
-                <div className="flex">
+            <div className="text-slogan-container flex ">
                 <p className="poppins-font txt-slogan">  We are 
                     <span className="span-slogan">
                         <Typewriter
@@ -72,54 +40,11 @@ function Header() {
                         />
                     </span>
                 </p>
-                </div>
+                
                 <button className="button poppins-font " ><a className="text-decoration-none" href="#contact">Contact us</a></button> 
             </div>
-           <div>
-           <MediaQuery maxWidth={1050}>
-                <Wave 
-                    className="wave"
-                    fill="#221E3F"
-                    paused={false}
-                    options={{
-                        height:59,
-                        amplitude: 40,
-                        speed: 0.18,
-                        points:2
-            
-                    }}
-                />
-           </MediaQuery>
-                <MediaQuery minWidth={1052}>
-                    <Wave 
-                            className="wave-2 "
-                            fill="#221E3F"
-                            paused={false}
-                            options={{
-                                height:59,
-                                amplitude: 120,
-                                speed: 0.21,
-                                points:3
-                            }}
-                        />
-                    <Wave 
-                        className="wave "
-                        fill="#221E3F"
-                        paused={false}
-                        options={{
-                            height:39,
-                            amplitude: 80,
-                            speed: 0.29,
-                            points:2
-                        }}
-                    />
-                </MediaQuery>
-                
             </div>
-            
-          
-           
-            
+            </div>
         </div>
     )
 }
