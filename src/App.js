@@ -9,8 +9,13 @@ import ServicesDesk from './ServicesDesk';
 import MediaQuery from 'react-responsive'
 import ServicesMolible from './ServicesMolible';
 import NavBarMobile from './NavBarMobile';
+import ScrollToTop from "./scrollToTop";
+import WhyUs from './WhyUs';
 
 function App(props) {
+ 
+  document.title = "EnterTek Solutions";
+
   const [scrollNav, setScrollNav]= useState(false);
 
     const changeNav =() =>{
@@ -23,8 +28,10 @@ function App(props) {
     useEffect(()=>{
         window.addEventListener('scroll', changeNav);
     }, []);
+
   return (
-    <Router className="app">
+    <Router className="app" base="" basename="/#" title="Entertek Solutions">
+      <ScrollToTop />
       <MediaQuery maxWidth={1250}>
         <NavBarMobile scrollNav={scrollNav}/>
       </MediaQuery >
@@ -32,10 +39,14 @@ function App(props) {
         <NavBar scrollNav={scrollNav}/>
       </MediaQuery>
       <Switch>
-        <Route exact path="/EnterTek-Solutions/about">
+        <Route exact path="/about">
           <AboutUs/>
         </Route>
-        <Route  path="/EnterTek-Solutions">
+        <Route exact path="/services">
+          <ServicesDesk/>
+        </Route>
+        
+        <Route path="/">
           <Header/>
           <MediaQuery maxWidth={1250}>
             <ServicesMolible/>
@@ -43,6 +54,7 @@ function App(props) {
           <MediaQuery minWidth={1251}>
             <ServicesDesk/>
           </MediaQuery>
+          <WhyUs/>
           <ContactUs/>
         </Route>
       </Switch>

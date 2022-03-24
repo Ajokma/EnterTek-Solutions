@@ -14,7 +14,7 @@ function ServicesDesk() {
     return (
         <section className="z-index-300">
             <div className="circle-services-blur"></div>
-            <div className="services-desktop-container">
+            <div className="services-desktop-container color-background-serv">
                 <h1 className=" color-white title-section poppins-font flex flex-column margin-bottom-55">Services</h1>
                 <div className="flex service-container ">
                     <div className=" flex margin-right-24px flex-column">
@@ -109,6 +109,7 @@ function ServicesDesk() {
                     
                 </div>
             </div>
+            <div></div>
         </section>
     )
 }

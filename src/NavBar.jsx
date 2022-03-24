@@ -10,10 +10,13 @@ function NavBar({scrollNav}) {
                 <NavLink to="/EnterTek-Solutions"><img height="25px" src={logo}alt="entertek-logo" /></NavLink>
                 <ul className="flex navbar poppins-font">
                     <li> 
-                        <NavLink className="navbar-options color-white text-decoration-none"   to="/EnterTek-Solutions/about">About us</NavLink> 
+                        <NavLink className="navbar-options color-white text-decoration-none" to="/about">About us</NavLink> 
                     </li>
                     <li>
                         <NavLink className="navbar-options color-white text-decoration-none" to="/EnterTek-Solutions/:services-desktop">Services</NavLink></li>
+                    <li> <a className="navbar-options color-white text-decoration-none" href="#contact">Industries</a></li>
+                    <li>
+                        <NavLink className="navbar-options color-white text-decoration-none" to="/EnterTek-Solutions/:services-desktop">Blog</NavLink></li>
                     <li> <a className="navbar-options color-white text-decoration-none" href="#contact">Contact</a></li>
                     <select className="navbar-options poppins-font color-white select " >
                         <option value="">English</option>
