@@ -15,8 +15,6 @@ function NavBar({scrollNav}) {
                     <li>
                         <NavLink className="navbar-options color-white text-decoration-none" to="/EnterTek-Solutions/:services-desktop">Services</NavLink></li>
                     <li> <a className="navbar-options color-white text-decoration-none" href="#contact">Industries</a></li>
-                    <li>
-                        <NavLink className="navbar-options color-white text-decoration-none" to="/EnterTek-Solutions/:services-desktop">Blog</NavLink></li>
                     <li> <a className="navbar-options color-white text-decoration-none" href="#contact">Contact</a></li>
                     <select className="navbar-options poppins-font color-white select " >
                         <option value="">English</option>

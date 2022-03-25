@@ -10,7 +10,7 @@ function AboutUs() {
                 <div className=" flex about-us-text-containter ">
                     <div className="flex flex-column">
                         <h1 className=" title-section color-white poppins-font">About us</h1>
-                        <img src={About} alt="" />
+                        <img className='img-about' src={About} alt="" />
                     </div>
                     <div className="about-us-paragraph-container flex flex-column">
                     <p className="about-us-paragraph poppins-font color-white"> 
@@ -23,7 +23,7 @@ function AboutUs() {
                     </div>
             </div>
             <h1 className=" title-section margin-bottom-55 color-white poppins-font">Our team</h1>
-            <div className='flex'>
+            <div className='flex container-img-team'>
                         <div className='personas-img '>
                             <img width={415} src={p3} alt="" />
                             <div className=' flex flex-column poppins-font color-white'>

@@ -465,7 +465,7 @@ a:hover{
 }
 
 .capa-2{
-  opacity: 1;
+  opacity: 0;
 }
 
 .font-text-chico{
@@ -790,6 +790,12 @@ input::placeholder {
     border-radius: 50%;
   }
 
+  .container-img-team{
+    width: 100vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
   .p-container-data-circle{
     width: 100vw;
     position: absolute;
@@ -805,32 +811,77 @@ input::placeholder {
     cursor:pointer;
   }  
 
+  .img-about{
+    width: 40%;
+    position: absolute;
+    left: 0;
+    top:20px;
+  }
+
+  .color-why{
+    width: 100vw;
+    height: 193.3px;
+    background: linear-gradient(180deg, #221E3F 13.02%, rgba(111, 98, 199, 0.88) 59.37%, #FFFFFF 100%);
+  }
+
+  .offices-container{
+    margin-top: 150px;
+    padding-top: 80px;
+    width: 100vw;
+    height: 100%;
+    background: #6F62C7;
+  }
 
 .why-text-container{
   width: 100%;
 }
 
+.medidas-img{
+  width: 100vw;
+}
+
+.subtitle-section{
+  font-weight: 100;
+  font-size: 30px;
+  text-align: center;
+}
+.title-section.margin-top-75.margin-bottom-55.poppins-font{
+  margin-top: 130px;
+  margin-bottom: 30px;
+}
+
   .pro-containers{
-    width: 100px;
+    width: 100vw;
     margin-top: 80px;
-    align-items: flex-start;
-    border: solid red;
+    flex-direction: column;
+    align-items: center;
   }
 
 .whyus-container{
-  width: 100%;
-  height: 3800px;
+  width: 100vw;
   background: white;
-  border: solid yellow;
 }
 
 .p-text-container{
   width: 100vw;
   height: 157px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
 }
 
 .why-text-container{
   width: 100vw;
+}
+
+.industries-containers{
+  width: 100vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-left: 4vw;
+  padding-right: 4vw;
 }
 
   .circle-data-purplue{
@@ -847,6 +898,25 @@ input::placeholder {
     background: linear-gradient(44.63deg, #0093E9 9.23%, #80D0C7 89%);
     border-radius: 50%;
   }
+
+  .industrie-containter-item-1{
+    padding-top: 30px;
+    min-width: 350px;
+    height: 430px;
+    border-radius: 22px;
+    background: linear-gradient(44.63deg, #4158D0 9.23%, #C850C0 47.04%, #FFCC70 89%);
+  }
+
+
+.industrie-containter-item-2{
+  padding-top: 30px;
+  min-width: 350px;
+  height: 430px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 22px;
+  background: linear-gradient(44.63deg, #0093E9 9.23%, #80D0C7 89%);
+}
 
   .title-circle-data{
     font-family: Poppins;

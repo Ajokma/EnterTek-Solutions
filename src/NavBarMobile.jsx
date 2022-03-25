@@ -21,7 +21,11 @@ function NavBarMobile({scrollNav}) {
                     </li>
                     <li onClick={showMenuOption} >
                         <NavLink className="navbar-options color-white text-decoration-none" to=":services-desktop">Services</NavLink>
-
+                        
+                    </li>
+                    <li onClick={showMenuOption} >
+                        <NavLink className="navbar-options color-white text-decoration-none" to=":services-desktop">Industries</NavLink>
+                        
                     </li>
                     <li onClick={showMenuOption} >
                     <NavLink className="navbar-options color-white text-decoration-none" to=":services-desktop">Contact</NavLink>

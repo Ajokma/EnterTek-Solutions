@@ -34,13 +34,14 @@ const [showDesc1, setShowDesc1] =useState(true);
           <p className=' p-text-container poppins-font margin-top-15'> Entertek is your trusted partner to deliver custom build IT Solutions. Our developers and consultants are ready to scope the work requested and present a fair and competitive offer that fit the customers needs. Regardless 
           of how complex a project may be, our team  will find the right way to deliver quality on time. 
           </p>
+          </div>
           <div  className='pro-containers flex justify-content-center '>
           <div onClick={showDescF1} className=' flex flex-column '>
             <div className='pro-circle flex flex-column '>
               <h2 className='poppins-font pro-title-circle'>Experience</h2>
             </div>
             <div className={showDesc1?("capa-2"):( "capa flex flex-column" )}>
-                <p className='poppins-font color-white font-text-chico' >Web Developers with over xxx years of experience, with significant international exposure.</p>
+                <p className='poppins-font color-white font-text-chico' >{showDesc1?(""):( "Web Developers with over xxx years of experience, with significant international exposure." )}</p>
             </div>
             </div>
             <div onClick={showDescF} className=' flex flex-column '>
@@ -48,7 +49,7 @@ const [showDesc1, setShowDesc1] =useState(true);
               <h2  className='poppins-font pro-title-circle'>Confidentiality</h2>
               </div>
               <div className={showDesc?("capa-2"):( "capa flex flex-column" )}>
-                <p className='poppins-font color-white font-text-chico' >We keep our clients' information and ideas confidential.</p>
+                <p className='poppins-font color-white font-text-chico' >{showDesc?(""):( "We keep our clients' information and ideas confidential." )}</p>
               </div>
             </div>
 
@@ -66,7 +67,7 @@ const [showDesc1, setShowDesc1] =useState(true);
             </div>
           </div>
           
-      </div>
+      
       </div>
       <div className=' img-container flex flex-column'>
       <h1 className='subtitle-section  poppins-font'>Infrastructure Services</h1>
@@ -99,7 +100,8 @@ const [showDesc1, setShowDesc1] =useState(true);
             </div>
 
             <div className='why-text-container'>
-              <h1 className='title-section margin-top-75 margin-bottom-55 poppins-font'>Industries</h1><div className='flex industries-containers'>
+              <h1 className='title-section margin-top-75 margin-bottom-55 poppins-font'>Industries</h1>
+              <div className='flex industries-containers'>
                 <div  className='industrie-containter-item-1 flex flex-column'>
                   <div className='flex flex-center flex-center-2'>
                     <img height="122px" src={Block} alt="" />
@@ -127,7 +129,7 @@ const [showDesc1, setShowDesc1] =useState(true);
 
       <div className='offices-container flex flex-column  '>
         <h2 className='title-section poppins-font color-white margin-bottom-55 '> our offices</h2>
-              <img src={World} alt="" />
+              <img className='medidas-img' src={World} alt="" />
             </div>
             
   </div>
