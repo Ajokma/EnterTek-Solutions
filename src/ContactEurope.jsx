@@ -10,13 +10,14 @@ function ContactEurope() {
             </div>
             <div className="flex align-items-center margin-top-15 ">
                 <img className="icon-address" src={phone} alt="" />
-                <p className="poppins-font address-text">Sandra de la Rosa Sánchez - Madrid : +34 623 179 996
- </p>
+                <p className="poppins-font address-text">Sandra de la Rosa Sánchez - Madrid : +34 623 179 996</p>
             </div>
-            
-            
         </div>
     )
+}
+
+function ContactEuropeSubmit() {
+    return alert(7)
 }
 
 export default ContactEurope
