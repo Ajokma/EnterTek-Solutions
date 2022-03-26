@@ -76,7 +76,7 @@ function ContactUs () {
 
     //return false
 
-    fetch('http://www.enterteksolutions.com/site/public/index.php/api/sendmail', requestOptions)
+    fetch('https://www.enterteksolutions.com/site/public/index.php/sendmail', requestOptions)
         .then(response => response.json())
         .then(json => {
            
