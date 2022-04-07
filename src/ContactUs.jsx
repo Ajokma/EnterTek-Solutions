@@ -44,7 +44,7 @@ function ContactUs () {
                                 <div className="margin-bottom-15">
                                     <button onClick={showNorthA} className="btn-countries color-white poppins-font " >North America</button>
                                     <button onClick={showEurope} className="btn-countries color-white poppins-font " >Europe</button>
-                                    <button className="btn-countries color-white poppins-font " >South America</button>
+                            
                                 </div>
                                 <div className="flex justify-content-center align-items-center">
                                     {show?(<ContactNorthAmerica/>):(<div></div>)}
@@ -61,7 +61,7 @@ function ContactUs () {
             <div className="contact-us-container flex justify-content-center align-items-center ">
 
                     <div className="flex justify-content-center ">
-                        <MediaQuery maxWidth={1250}>{ CountriesMobile() }</MediaQuery>
+                        <MediaQuery maxWidth={1251}>{ CountriesMobile() }</MediaQuery>
                         <MediaQuery minWidth={1252}>{ CountriesDesktop() }</MediaQuery>
                     <div className="flex input-container  align-items-end ">
                     <div className="flex ">
@@ -76,7 +76,7 @@ function ContactUs () {
                         <option selected value="">Please select zone</option>
                         <option value="North America">North America</option>
                         <option value="Europe">Europe</option>
-                        <option value="South America">South America</option>
+                        
                     </select>
                     <input className="input-mail poppins-font input-b-size " type="text" placeholder="Subject" />
                     <textarea  className="input-message poppins-font" type="text" placeholder="Type your message here..." />
