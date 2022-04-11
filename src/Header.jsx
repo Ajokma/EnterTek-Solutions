@@ -28,7 +28,7 @@ function Header() {
                     <div className="circle-5"></div>
                 </div>
                     <div className="text-slogan-container flex ">
-                        <p className="poppins-font txt-slogan">  Driven by 
+                        <div className="poppins-font txt-slogan">  Driven by 
                             <span className="span-slogan">
                                 <Typewriter
                                 options={{
@@ -39,7 +39,7 @@ function Header() {
                                 }}
                                 />
                             </span>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>

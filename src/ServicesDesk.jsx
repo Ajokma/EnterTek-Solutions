@@ -12,7 +12,7 @@ import crypto from "./resouces/icons/cryptocurrency.png"
 
 function ServicesDesk() {
     return (
-        <section className="z-index-300">
+        <section >
             <div className="circle-services-blur"></div>
             <div className="services-desktop-container color-background-serv">
                 <h1 className=" color-white title-section poppins-font flex flex-column margin-bottom-55">Services</h1>
@@ -104,12 +104,16 @@ function ServicesDesk() {
                                 provide long-term assistance and advice on related technological and operational matters for our customers worldwide.
                             </p>
                         </div>
+                        
                     </div>
                         
                     
                 </div>
+                
             </div>
+            <div className='color-why'></div>
             <div></div>
+            
         </section>
     )
 }

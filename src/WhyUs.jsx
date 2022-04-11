@@ -1,4 +1,4 @@
-import React,{ useState } from 'react';
+import React from 'react';
 import Azure from "./resouces/icons/azure.png"
 import World from "./resouces/world.png"
 import Aws from "./resouces/icons/aws.png"
@@ -14,21 +14,12 @@ import Curren from "./resouces/Curren.png"
 
 function WhyUs() {
 
-  const [showDesc, setShowDesc] =useState(true);
-  const showDescF =()=>{
-    setShowDesc(!showDesc);
-    setShowDesc1(true);
-};
 
-const [showDesc1, setShowDesc1] =useState(true);
-  const showDescF1 =()=>{
-    setShowDesc1(!showDesc1);
-    setShowDesc(true);
-};
 
   return <div className='whyus-container flex flex-column'>
-      <div className='color-why'></div>
-      <div lassName='flex flex-column'>
+      
+      <div className='flex flex-column'>
+       
         <div className='why-text-container'>
           <h1 className='title-section  poppins-font'>Why us?</h1>
           <p className=' p-text-container poppins-font margin-top-15'> Entertek is your trusted partner to deliver custom build IT Solutions. Our developers and consultants are ready to scope the work requested and present a fair and competitive offer that fit the customers needs. Regardless 
@@ -36,41 +27,50 @@ const [showDesc1, setShowDesc1] =useState(true);
           </p>
           </div>
           <div  className='pro-containers flex justify-content-center '>
-          <div onClick={showDescF1} className=' flex flex-column '>
-            <div className='pro-circle flex flex-column '>
-              <h2 className='poppins-font pro-title-circle'>Experience</h2>
-            </div>
-            <div className={showDesc1?("capa-2"):( "capa flex flex-column" )}>
-                <p className='poppins-font color-white font-text-chico' >{showDesc1?(""):( "Web Developers with over xxx years of experience, with significant international exposure." )}</p>
-            </div>
-            </div>
-            <div onClick={showDescF} className=' flex flex-column '>
-              <div className='pro-circle flex flex-column '>
-              <h2  className='poppins-font pro-title-circle'>Confidentiality</h2>
-              </div>
-              <div className={showDesc?("capa-2"):( "capa flex flex-column" )}>
-                <p className='poppins-font color-white font-text-chico' >{showDesc?(""):( "We keep our clients' information and ideas confidential." )}</p>
-              </div>
-            </div>
+          
 
-            <div className='pro-circle flex flex-column'>
-              <h2 className='poppins-font pro-title-circle'>Skills</h2>
-            </div>
-            <div className='pro-circle flex flex-column '>
-              <h2 className='poppins-font pro-title-circle'>Expertise</h2>
-            </div>
-            <div className='pro-circle flex flex-column'>
-              <h2 className='poppins-font pro-title-circle'>Problem Solvers</h2>
-            </div>
-            <div className='pro-circle flex flex-column '>
-              <h2 className='poppins-font pro-title-circle'>Flexibility</h2>
-            </div>
+          <div className='pro-circle flex flex-column '>
+              <h2 className='poppins-font pro-title-circle'>Experience</h2>
+              <div className='capa flex flex-column'>
+              <p className='poppins-font color-white font-text-chico'>"Web Developers with over xxx years of experience, with significant international exposure." </p>
+              </div>
           </div>
+          <div className='pro-circle flex flex-column '>
+              <h2 className='poppins-font pro-title-circle'>Confidentiality</h2>
+              <div className='capa flex flex-column'>
+              <p className='poppins-font color-white font-text-chico'>"We keep our clients' information and ideas confidential." </p>
+              </div>
+          </div>
+          <div className='pro-circle flex flex-column '>
+              <h2 className='poppins-font pro-title-circle'>Skills</h2>
+              <div className='capa flex flex-column'>
+              <p className='poppins-font color-white font-text-chico'>"Our developers have skills with keen experience. They have a sharp mind in order to effectively execute <br/> those skills." </p>
+              </div>
+          </div>
+          <div className='pro-circle flex flex-column '>
+              <h2 className='poppins-font pro-title-circle'>Expertise</h2>
+              <div className='capa flex flex-column'>
+              <p className='poppins-font color-white font-text-chico'>"Domain-certified web developers, with verifiable qualifications and good references." </p>
+              </div>
+          </div>
+          <div className='pro-circle flex flex-column '>
+              <h2 className='poppins-font pro-title-circle'>Problem Solvers</h2>
+              <div className='capa flex flex-column'>
+              <p className='poppins-font color-white font-text-chico'>"A go-getter attitude,<br/> with a positive approach to solve problems instead of latency." </p>
+              </div>
+          </div>
+          <div className='pro-circle flex flex-column '>
+              <h2 className='poppins-font pro-title-circle'>Flexibility</h2>
+              <div className='capa flex flex-column'>
+              <p className='poppins-font color-white font-text-chico'>"Our developers adapt to our customers needs and worktime." </p>
+              </div>
+          </div>
+            </div>
           
       
       </div>
-      <div className=' img-container flex flex-column'>
-      <h1 className='subtitle-section  poppins-font'>Infrastructure Services</h1>
+      <div className='  img-container flex flex-column'>
+      <h1 className='subtitle-section margin-top-75  poppins-font'>Infrastructure Services</h1>
             <div className=' c-infraestructure-container'>
               <div className='infraestructure-container flex flex-column' >
                 <img width={200} src={Azure} alt="" />
@@ -94,7 +94,7 @@ const [showDesc1, setShowDesc1] =useState(true);
               </div>
               <div className='infraestructure-container-2 flex flex-column' >
               <img width={200} src={Aws} alt="" />
-                <h4 className='poppins-font color-white'>AWS - Amazon Cloud</h4>
+                <h4 className='poppins-font color-white margin-top-15'>AWS - Amazon Cloud</h4>
               </div>
             </div>
             </div>
@@ -134,5 +134,6 @@ const [showDesc1, setShowDesc1] =useState(true);
             
   </div>
 }
+
 
 export default WhyUs;

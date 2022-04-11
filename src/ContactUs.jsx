@@ -2,6 +2,10 @@ import React,{ useState } from 'react'
 import ContactEurope from './ContactEurope';
 import ContactNorthAmerica from './ContactNorthAmerica';
 import MediaQuery from 'react-responsive';
+import ReCAPTCHA from "react-google-recaptcha";
+
+const recaptchaRef = React.createRef();
+const recaptchVal = null;
 
 function ContactUs () {
     const [show, setShow] = useState(false);
@@ -14,6 +18,11 @@ function ContactUs () {
         setShow(false)
         setShowE(!showE)
     };
+
+    function onChange(value) {
+        console.log("Captcha value:", value);
+        this.recaptchVal = value;
+      }
 
     function CountriesDesktop() {
         return (
@@ -39,21 +48,21 @@ function ContactUs () {
     function CountriesMobile() {
         return (
             <div>
-                <div className="input-container flex  ">
-                    <h1 className="title-section color-white poppins-font margin-bottom-55">Contact us</h1>
-                    <div className="btn-countries-container ">
-                        <div className="margin-bottom-15">
-                            <button onClick={showNorthA} className="btn-countries color-white poppins-font " >North America</button>
-                            <button onClick={showEurope} className="btn-countries color-white poppins-font " >Europe</button>
-                            <button className="btn-countries color-white poppins-font " >South America</button>
+                <div className="input-container flex">
+                            <h1 className="title-section color-white poppins-font margin-bottom-55">Contact us</h1>
+                            <div className="btn-countries-container ">
+                                <div className="margin-bottom-15">
+                                    <button onClick={showNorthA} className="btn-countries color-white poppins-font " >North America</button>
+                                    <button onClick={showEurope} className="btn-countries color-white poppins-font " >Europe</button>
+                            
+                                </div>
+                                <div className="flex justify-content-center align-items-center">
+                                    {show?(<ContactNorthAmerica/>):(<div></div>)}
+                                    {showE?(<ContactEurope/>):(<div></div>)}
+                                </div>
+                            </div>
                         </div>
-                        <div className="flex justify-content-center align-items-center">
-                            {show?(<ContactNorthAmerica/>):(<div></div>)}
-                            {showE?(<ContactEurope/>):(<div></div>)}
-                        </div>
-                    </div>
                 </div>
-            </div>
         )
     };
 
@@ -71,27 +80,34 @@ function ContactUs () {
         body: JSON.stringify({ user }),
     };
 
+    const recaptchaValue = recaptchaRef.current.getValue();
+
+    console.log(recaptchaValue);
     console.log(formData);
     console.log(user);
 
-    //return false
+    
+    //this.props.onSubmit(recaptchaValue);
 
-    fetch('https://www.enterteksolutions.com/site/public/index.php/sendmail', requestOptions)
-        .then(response => response.json())
-        .then(json => {
+
+    return false
+
+        // fetch('https://www.enterteksolutions.com/site/public/index.php/sendmail', requestOptions)
+        // .then(response => response.json())
+        // .then(json => {
            
-            console.log(json);
+        //     console.log(json);
           
-            if ('json.success',json.success) {
-               alert('Email was sent! Thanks.' );
-               e.target.reset();
-            }
-            else {
-                alert('Email sent error! Please try again or another way.')
-            }
+        //     if ('json.success',json.success) {
+        //        alert('Email was sent! Thanks.' );
+        //        e.target.reset();
+        //     }
+        //     else {
+        //         alert('Email sent error! Please try again or another way.')
+        //     }
 
-        })    
-        .catch(err => console.log('Request Failed', err));    
+        // })    
+        // .catch(err => console.log('Request Failed', err));    
     }
 
     return (
@@ -100,26 +116,32 @@ function ContactUs () {
             <div className="contact-us-container flex justify-content-center align-items-center ">
                 <form onSubmit={submitContact}>
                     <div className="flex justify-content-center ">
-                        <MediaQuery maxWidth={1250}>{ CountriesMobile() }</MediaQuery>
+                        <MediaQuery maxWidth={1251}>{ CountriesMobile() }</MediaQuery>
                         <MediaQuery minWidth={1252}>{ CountriesDesktop() }</MediaQuery>
-                    <div className="flex input-container  align-items-end ">
-                    <div className="flex ">
-                        <input className="input-mail poppins-font input-a-size" type="text" name="from_name" placeholder="Name" required />
-                        <input className="input-mail poppins-font input-a-size" type="email" name="from_email" placeholder="Email" required />
-                    </div>
-                    <div className="flex ">
-                        <input className="input-mail poppins-font input-a-size" type="text"  name="from_phone" placeholder="Phone"/>
-                        <input className="input-mail poppins-font input-a-size" type="text" name="from_address" placeholder="Address"/>
-                    </div>
-                    <select className="input-mail poppins-font input-b-size" name="zone" required>
-                        <option selected value="">Please select zone</option>
-                        <option value="North America">North America</option>
-                        <option value="Europe">Europe</option>
-                    </select>
-                    <input className="input-mail poppins-font input-b-size " type="text" name="subject" placeholder="Subject" required/>
-                    <textarea  className="input-message poppins-font" type="text" name="message" placeholder="Type your message here..." required/>
-                    <button type='submit' className="button poppins-font">Submit</button>
-                    </div>
+                        <div className="flex input-container  align-items-end mb-2">
+                            <div className="flex ">
+                                <input className="input-mail poppins-font input-a-size" type="text" name="from_name" placeholder="Name" required />
+                                <input className="input-mail poppins-font input-a-size" type="email" name="from_email" placeholder="Email" required />
+                            </div>
+                            <div className="flex ">
+                                <input className="input-mail poppins-font input-a-size" type="text"  name="from_phone" placeholder="Phone"/>
+                                <input className="input-mail poppins-font input-a-size" type="text" name="from_address" placeholder="Address"/>
+                            </div>
+                            <select className="input-mail poppins-font input-b-size" name="zone" required>
+                                <option value="">Please select zone</option>
+                                <option value="North America">North America</option>
+                                <option value="Europe">Europe</option>
+                            </select>
+                            <input className="input-mail poppins-font input-b-size " type="text" name="subject" placeholder="Subject" required/>
+                            <textarea  className="input-message poppins-font" type="text" name="message" placeholder="Type your message here..." required/>
+                            <button type='submit' className="button poppins-font btnSubmit">Submit</button>
+                            <ReCAPTCHA
+                                ref={recaptchaRef}
+                                sitekey="6LfE3V0cAAAAAFCO5V8iuMADOgju6ZQFkJRc9VRH"
+                                onChange={onChange}
+                            />
+                        </div>
+                        
                     </div>
                 </form>
             </div>

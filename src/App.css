@@ -1,10 +1,12 @@
 *{
   margin: 0;
   box-sizing: border-box;
+  
 }
 
 body{
   background-color: #221E3F;
+  
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;1,800&display=swap');
 
@@ -13,6 +15,9 @@ body{
   height: 110vh;
   background-color: #221E3F;
   z-index: -6;
+}
+.medidas-img{
+  width: 100vw;
 }
 
 .medida-full{
@@ -264,6 +269,54 @@ color: #FFFFFF;
   font-weight: 800;
 }
 
+.team-personas{
+  width: 371px;
+  height: 571px;
+  background: #6E61C6;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.img-team-persona{
+  width: 100%;
+  overflow: hidden;
+  opacity: 0;
+  
+}
+
+.img-team-persona:hover{
+  opacity: 1;
+  position: absolute;
+}
+
+.p-text-team{
+  width: 100%;
+  position:absolute;
+  top: 0;
+}
+
+.sub-title-personas-teams{
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.par-personas-teams{
+  text-align: center;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 23px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.coworkers{
+  font-size: 100px;
+}
+
 .navbar{
   list-style-type: none;
 }
@@ -356,6 +409,8 @@ a:hover{
   background-color:#221E3F;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  top:15%
 }
 
 .about-us-text-containter{
@@ -375,6 +430,7 @@ a:hover{
   padding-right: 20%;
   font-size: 16px;
   line-height: 35px;
+  margin-bottom: 120px;
 }
 
 .title-section {
@@ -408,12 +464,13 @@ a:hover{
 }
 
 .why-text-container{
-  width: 1080px;
+  width: 100%;
+  padding-top: 20%;
 }
 
 .color-why{
   width: 100vw;
-  height: 593.3px;
+  min-height: 693.3px;
   background: linear-gradient(180deg, #221E3F 13.02%, rgba(111, 98, 199, 0.88) 59.37%, #FFFFFF 100%);
 }
 
@@ -433,11 +490,12 @@ a:hover{
 }
 
 .pro-circle{
-  min-width: 197px;
+  min-width: 198px;
   height: 198px;
   border: 4px solid #6E61C6;
   border-radius: 50%;
   cursor:pointer;
+  position: relative;
 }
 
 .pro-img{
@@ -456,11 +514,16 @@ a:hover{
 }
 
 .capa{
+  position: absolute;
+  top:0;
   min-width: 197px;
   min-height: 198px;
   background:#6E61C6;
   border-radius: 50%;
   text-align: center;
+  opacity: 0;
+}
+.capa:hover{
   opacity: 1;
 }
 
@@ -471,8 +534,10 @@ a:hover{
 .font-text-chico{
   font-size: 14.5px;
   line-height: 20px;
+  max-width: 198px;
   margin-left: 5px;
   margin-right: 5px;
+  
 }
 
 .offices-container{
@@ -530,11 +595,11 @@ a:hover{
 }
 
 .margin-top-75{
-  margin-top: 275px;
+  margin-top: 55px;
 }
 
 .industries-containers{
-  width: 130%;
+  max-width: 100vw;
   overflow-x: scroll;
   overflow-y: hidden;
 }
@@ -567,6 +632,7 @@ a:hover{
 
 .service-container{
   width: 100vw;
+  height: 1630px;
   justify-content: center;
 }
 
@@ -826,6 +892,7 @@ input::placeholder {
     width: 100vw;
     height: 193.3px;
     background: linear-gradient(180deg, #221E3F 13.02%, rgba(111, 98, 199, 0.88) 59.37%, #FFFFFF 100%);
+    
   }
 
   .offices-container{
@@ -838,6 +905,7 @@ input::placeholder {
 
 .why-text-container{
   width: 100%;
+  text-align: center;
 }
 
 .medidas-img{
@@ -864,6 +932,7 @@ input::placeholder {
 .whyus-container{
   width: 100vw;
   background: white;
+
 }
 
 .p-text-container{
@@ -1028,7 +1097,7 @@ input::placeholder {
   
   .about-us-container{
     width: 100vw;
-    height: 100%;
+    height: 3203px;
     background-color:#221E3F;
     flex-direction: column;
     align-items: center;
@@ -1037,7 +1106,8 @@ input::placeholder {
 
   .flex.about-us-text-containter{
     flex-direction: column;
-    margin-top: 20%;
+    margin-top: 5%;
+    height: 1500px;
   }
 
   .circle-about{
@@ -1065,14 +1135,13 @@ input::placeholder {
 
   .about-us-paragraph{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     padding-left: 5%;
     padding-right: 5%;
     font-size: 15px;
     line-height: 25px;
     text-align: center;
     margin-top: 35%;
-    margin-bottom: 10%;
   }
   
   .p-absolute{
@@ -1233,7 +1302,6 @@ input::placeholder {
     width: 100vw;
     height: 90%;
     background-color:#221E3F;
-    padding-bottom: 20%;
   }
   
   .paragraph-card{
@@ -1273,13 +1341,50 @@ input::placeholder {
     width: 100%;
     height: 100%;
   }
+  .pro-containers{
+    width: 100%;
+    margin-top: 80px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container-img-team{
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .team-personas{
+    margin-top: 20px;
+  }
+
+  .container-img-team{
+    width: 100vw;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .coworkers{
+    font-size: 40px;
+  }
+  
 
 }
 
-@media (min-width: 1051px) and  (max-width: 1250px){
+@media (min-width: 1051px) and  (max-width: 1251px){
 
   .flex.about-us-text-containter{
     flex-direction: column;
+  } 
+  
+  .why-text-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .circle-about{
@@ -1327,6 +1432,150 @@ input::placeholder {
     justify-content: center;
     padding-bottom: 20%;
   }
+  .services-totalcard-container{
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn-show-more{
+    background: none;
+    border: none;
+    color: white;
+    margin-top: 13px;
+    font-weight: 700;
+  }
+  .btn-menu{
+    background: none;
+    border: none;
+    position: absolute;
+    left: 89%;
+    z-index: 1;
+    padding-top: 3px;
+  }
+  .pro-containers{
+    width: 100vw;
+    margin-top: 80px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card-services-container{
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .input-container{
+    width: 45vw;
+    height: 100%;
+    flex-direction: column;
+  }
+  contact-us-container{
+    width: 100vw;
+    height: 1050px;
+    padding-bottom: 55px;
+  }
+
+  .input-mail{
+    background:none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #00BDF9;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255);
+    margin-right: 24px;
+  }
+  
+  .input-message{
+    width: 639px; 
+    height: 251px;
+    border: 1px solid #00BDF9;
+    background:none;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    text-align: center;
+    margin-right: 24px;
+  }
+
+  .contact-us-container .flex.justify-content-center{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex.input-container.align-items-end{
+    align-items: center;
+  }
+
+  .flex .input-mail{
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+  .flex .input-message{
+    margin-left: 0px;
+  }
+
+  .btn-countries {
+    font-weight: 500;
+    font-size: 26px;
+    background: none;
+    border: none;
+  }
+  .btn-countries-container{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .about-us-container-title{
+    font-size: 90px;
+    line-height: 100px;
+    text-align: center;
+    font-weight: 800;
+    margin-top:40%;
+    margin-left: 0;
+  }
+
+  .title-section {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .about-us-paragraph{
+    z-index: 20;
+    width: 100vw;
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 15px;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 10%;
+  }
+
+  .flex.about-us-text-containter{
+    flex-direction: column;
+  }
+
+  .img-about{
+    width: 30%;
+    position: absolute;
+    left: 0;
+  }
+
+  .container-img-team{
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .team-personas{
+    margin-top: 20px;
+  }
 
 }
 
@@ -1334,6 +1583,23 @@ input::placeholder {
   .header-container{
     width: 100vw;
     height: 100vh ;
+  }
+
+  .why-text-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pro-containers{
+    width: 100vw;
+    margin-top: 80px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    
   }
 
   .circle-1{
@@ -1441,8 +1707,18 @@ input::placeholder {
     font-size: 15px;
     line-height: 35px;
     text-align: center;
-    margin-top: 45%;
+    margin-top: 15%;
     margin-bottom: 10%;
+  }
+
+  .flex.about-us-text-containter{
+    flex-direction: column;
+  }
+
+  .img-about{
+    width: 30%;
+    position: absolute;
+    left: 0;
   }
 
   .about-us-container{
@@ -1710,6 +1986,18 @@ input::placeholder {
     text-align:center;
   }
 
+  .container-img-team{
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .team-personas{
+    margin-top: 20px;
+  }
+
+  .coworkers{
+    font-size: 40px;
+  }
 }
 
 @media  (max-width: 370px){
@@ -1775,4 +2063,9 @@ input::placeholder {
     margin-top: 45%;
     margin-bottom: 10%;
   }
+}
+
+
+.btnSubmit{
+  margin-bottom:10px
 }

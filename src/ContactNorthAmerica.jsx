@@ -14,7 +14,6 @@ function ContactNorthAmerica() {
                 <img className="icon-address" src={phone} alt="" />
                 <p className="poppins-font address-text">+1 (305) 432 2970</p>
             </div>
-            
         </div>
     )
 }
