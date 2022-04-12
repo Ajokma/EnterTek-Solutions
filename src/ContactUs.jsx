@@ -80,34 +80,30 @@ function ContactUs () {
         body: JSON.stringify({ user }),
     };
 
-    const recaptchaValue = recaptchaRef.current.getValue();
+    //const recaptchaValue = recaptchaRef.current.getValue();
 
-    console.log(recaptchaValue);
-    console.log(formData);
-    console.log(user);
+    // console.log(recaptchaValue);
+    // console.log(formData);
+    // console.log(user);
 
-    
-    //this.props.onSubmit(recaptchaValue);
+    //return false
 
-
-    return false
-
-        // fetch('https://www.enterteksolutions.com/site/public/index.php/sendmail', requestOptions)
-        // .then(response => response.json())
-        // .then(json => {
+        fetch('https://www.enterteksolutions.com/site/public/index.php/sendmail', requestOptions)
+        .then(response => response.json())
+        .then(json => {
            
-        //     console.log(json);
+            console.log(json);
           
-        //     if ('json.success',json.success) {
-        //        alert('Email was sent! Thanks.' );
-        //        e.target.reset();
-        //     }
-        //     else {
-        //         alert('Email sent error! Please try again or another way.')
-        //     }
+            if ('json.success',json.success) {
+               alert('Email was sent! Thanks.' );
+               e.target.reset();
+            }
+            else {
+                alert('Email sent error! Please try again or another way.')
+            }
 
-        // })    
-        // .catch(err => console.log('Request Failed', err));    
+        })    
+        .catch(err => console.log('Request Failed', err));    
     }
 
     return (
