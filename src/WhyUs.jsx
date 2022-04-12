@@ -32,7 +32,7 @@ function WhyUs() {
           <div className='pro-circle flex flex-column '>
               <h2 className='poppins-font pro-title-circle'>Experience</h2>
               <div className='capa flex flex-column'>
-              <p className='poppins-font color-white font-text-chico'>"Web Developers with over xxx years of experience, with significant international exposure." </p>
+              <p className='poppins-font color-white font-text-chico'>"Web Developers with over 20 years of experience, with significant international exposure." </p>
               </div>
           </div>
           <div className='pro-circle flex flex-column '>
